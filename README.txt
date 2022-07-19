@@ -6,7 +6,7 @@ Movies
 		- Movies > 9.0
 		- 1001 Movies You Must See Before You Die
 		- Criterion Collection
-	Custom: Combination of IMDb and trakt lists for niche topics 		#partly from AwesomeAustin
+	Custom: Combination of lists for niche topics 		#AwesomeAustin
 		- Conspiracy
 		- Crime
 		- Dark Comedy
@@ -39,10 +39,10 @@ Movies
 		- Best Original/Adapted Screenplay
 		- Best Original Motion Picture
 		- Best Visual Effects
-	Rotten Tomatoes:							#AwesomeAustin
+	Rotten Tomatoes:					#AwesomeAustin
 		- Best of 2014-2021
 		- Best All-Time, Rom Com, and Horror
-	Holidays: Never Hidden							#Magic
+	Holidays: Never Hidden					#Magic
 		- Christmas815
 		- Easter
 		- Halloween
@@ -50,13 +50,13 @@ Movies
 		- New Year's Eve
 		- St. Patrick's Day
 		- Thanksgiving 		
-	People:									#Including Glasti1
+	People:							#Including Glasti1
 		- 350+ Actors, Directors and Producers
 	Sequels:
 		- 650+ Movie Franchise Collections
 
 TV Shows
-	Collections:								#SiskoUrso
+	Collections:						#SiskoUrso
 		- Attenborough
 		- Battlestar Galactica
 		- C.S.I
@@ -69,7 +69,7 @@ TV Shows
 		- Star Wars
 		- The Walking Dead
 		- The X-Files		
-	Kids Collections:							#Saturday Morning Collections by JJJonesJr33
+	Kids Collections:					#Saturday Morning Collections by JJJonesJr33
 		- ABC Kids				
 		- Cartoon Cartoons
 		- Disney Afternoon
