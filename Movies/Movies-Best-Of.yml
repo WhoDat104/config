@@ -1,0 +1,89 @@
+collections: 
+
+############################
+#         POPULAR          #
+############################
+
+  Top Ten Pirated Weekly:
+    trakt_list: https://trakt.tv/users/hdlists/lists/top-ten-pirated-movies-of-the-week-torrent-freak-com
+    smart_label: critic_rating.desc
+    sync_mode: sync
+    sort_title: "!01_Pirated"
+    summary: Most Pirated Movies of The Week
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/chart/Top%2010%20Pirated%20Movies%20of%20the%20Week.jpg
+    
+############################
+#         DISCOVER         #
+############################
+#
+#  "Popular Children's Animations":
+#    tmdb_discover:
+#      limit: 30
+#      with_genres: 16
+#      certification_country: US
+#      certification: G|PG
+#      sort_by: popularity.desc
+#    sync_mode: sync
+#    collection_mode: default
+#    collection_order: custom
+#    summary: A collection of the most popular Animated Kids movies from TMDb
+#    sort_title: "*150"
+#    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Children.jpg
+#    schedule: daily
+#    only_filter_missing: true
+    
+############################
+#         BEST OF          #
+############################
+ 
+  "AFI's 100":
+    imdb_list: https://www.imdb.com/list/ls027841309/
+    sync_mode: sync
+    collection_mode: default
+    collection_order: custom
+    sort_title: "*101"
+    url_poster: https://plexcollectionposters.com/images/2020/06/28/Movies529ef08e898e8d2f.jpg
+    summary: AFIs 100 Years... 100 Movies – 10th Anniversary Edition (2007) is an updated edition to AFIs 100 Years... 100 Movies, a list of the top 100 greatest American films of all time. 
+    schedule: yearly(01/30)
+  9.0 Movies:
+   smart_filter:
+     all:
+       critic_rating.gte: 9.0
+   sync_mode: sync
+   collection_mode: default
+   sort_title: "*102"
+   schedule: weekly(thursday) 
+  1001 Movies You Must See Before You Die:
+    trakt_list: https://trakt.tv/users/sp1ti/lists/1001-movies-you-must-see-before-you-die
+    sync_mode: sync
+    collection_mode: default
+    collection_order: year.desc
+    sort_title: "*103"
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Extra-Genres/main/1001%20Movies.png
+    schedule: monthly(10)
+  Criterion Collection:
+    imdb_list: https://www.imdb.com/list/ls063225919/
+    trakt_list: https://trakt.tv/users/radiostarred/lists/the-criterion-collection
+    sync_mode: sync
+    collection_mode: default
+    collection_order: critic_rating.desc
+    sort_title: "*104"
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Extra-Genres/main/Criterion%20Collection.png
+    schedule: monthly(10)
+  Top Grossing Films Annually:
+    imdb_list: https://www.imdb.com/list/ls000065674/
+    collection_order: year.desc
+    sync_mode: sync
+    sort_title: "*105"
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Extra-Genres/main/Top%20Grossing%20Annually.png
+    schedule: yearly (01/30)  
+  Top 50 Grossing Films of All-Time:
+    tmdb_list: https://www.themoviedb.org/list/10
+    collection_order: custom
+    sync_mode: sync
+    sort_title: "*106"
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Extra-Genres/main/Top%20Grossing%20All-Time.png
+    schedule: monthly(20)  

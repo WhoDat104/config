@@ -1,0 +1,380 @@
+collections: 
+
+############################
+#          CUSTOM          #
+############################
+
+  Conspiracy:
+    imdb_list: 
+        - https://www.imdb.com/list/ls063268303/
+        - https://www.imdb.com/list/ls022339408/
+        - https://www.imdb.com/list/ls020828491/
+        - https://www.imdb.com/list/ls071930975/
+    trakt_list: https://trakt.tv/users/kayaaron13/lists/conspiracy-movies
+    sync_mode: sync
+    collection_mode: default
+    collection_order: critic_rating.desc
+    sort_title: "*403"
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Extra-Genres/main/Conspiracy.png
+    schedule: monthly(10)
+  Crime:
+    imdb_list:
+      - https://www.imdb.com/list/ls021415585/
+      - https://www.imdb.com/list/ls075742206/
+      - https://www.imdb.com/list/ls098660180/
+      - https://www.imdb.com/list/ls068224634/
+      - https://www.imdb.com/list/ls009794682/
+      - https://www.imdb.com/list/ls059928685/
+    sync_mode: sync
+    collection_mode: default
+    collection_order: critic_rating.desc
+    sort_title: "*405"
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Crime.jpg
+    schedule: monthly(10)
+  Dark Comedy:
+    imdb_list: 
+        - https://www.imdb.com/list/ls068120888/
+        - https://www.imdb.com/list/ls052772888/
+        - https://www.imdb.com/list/ls066399600/
+        - https://www.imdb.com/list/ls025420336/
+        - https://www.imdb.com/list/ls022751452/
+    trakt_list: https://trakt.tv/users/ld667/lists/dark-comedies
+    sync_mode: sync
+    collection_mode: default
+    collection_order: critic_rating.desc
+    sort_title: "*407"
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Extra-Genres/main/Dark%20Comedy.png
+    schedule: monthly(10)
+  Dystopian:
+    imdb_list: 
+        - https://www.imdb.com/list/ls003911192/
+        - https://www.imdb.com/list/ls040189652/
+        - https://www.imdb.com/list/ls025864392/
+    trakt_list: https://trakt.tv/users/ryanlouisk/lists/dystopian-films
+    sync_mode: sync
+    collection_mode: default
+    collection_order: critic_rating.desc
+    sort_title: "*409"
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Extra-Genres/main/Dystopian.png
+    schedule: monthly(10)
+  Football:
+    imdb_list: 
+        - https://www.imdb.com/list/ls020805020/
+        - https://www.imdb.com/list/ls055138054/
+        - https://www.imdb.com/list/ls053896328/
+    trakt_list: https://trakt.tv/users/dsmash/lists/movies-sports-football
+    sync_mode: sync
+    collection_mode: default
+    collection_order: critic_rating.desc
+    sort_title: "*410"
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Extra-Genres/main/Football.png
+    schedule: monthly(10)
+  IMAX: 
+    trakt_list: https://trakt.tv/users/siskourso/lists/imax-movies
+    sync_mode: sync
+    collection_mode: default
+    collection_order: year.asc
+    sort_title: "*411"
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Extra-Genres/main/IMAX.png
+  Inspirational:
+    imdb_list:
+      - https://www.imdb.com/list/ls069754038/
+      - https://www.imdb.com/list/ls079599062/
+      - https://www.imdb.com/list/ls052687231/
+      - https://www.imdb.com/list/ls063407922/
+      - https://www.imdb.com/list/ls062384827/
+    trakt_list: https://trakt.tv/users/rizreflects/lists/inspiring
+    tmdb_movie:
+      - 227306
+      - 14292
+      - 14534
+    sync_mode: sync
+    collection_mode: default
+    collection_order: critic_rating.desc
+    sort_title: "*412"
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Extra-Genres/main/Inspirational.png
+    schedule: monthly(10)
+  Mind-Bend:
+    imdb_list: 
+        - https://www.imdb.com/list/ls000076793/
+        - https://www.imdb.com/list/ls084006834/
+        - https://www.imdb.com/list/ls069055758/
+        - https://www.imdb.com/list/ls025372604/
+        - https://www.imdb.com/list/ls051718704/
+        - https://www.imdb.com/list/ls031749787/
+    trakt_list: https://trakt.tv/users/lish408/lists/mindfuck
+    mdblist_list: https://mdblist.com/lists/hdlists/mindfuck-movies
+    sync_mode: sync
+    collection_mode: default
+    collection_order: critic_rating.desc
+    sort_title: "*413"
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Mind-Bend.jpg
+    summary: Movies that are mind bending, trippy, have big twists, have open endings, or make you think about them for days.
+    schedule: monthly(10)
+    only_filter_missing: true
+  Natural Disaster:
+    imdb_list: 
+        - https://www.imdb.com/list/ls063638722/
+        - https://www.imdb.com/list/ls505219626/
+        - https://www.imdb.com/list/ls098551167/
+    trakt_list: https://trakt.tv/users/daddyjim/lists/natural-disaster-movies
+    tmdb_movie:
+      - 646380
+    sync_mode: sync
+    collection_mode: default
+    collection_order: critic_rating.desc
+    sort_title: "*415"
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Extra-Genres/main/Natural%20Disaster.png
+    schedule: monthly(10)
+  Pandemic:
+    imdb_list: 
+        - https://www.imdb.com/list/ls505219442
+        - https://www.imdb.com/list/ls025188564/
+        - https://www.imdb.com/list/ls096236074/
+        - https://www.imdb.com/list/ls092127186/
+    trakt_list: https://trakt.tv/users/mraniki/lists/theme-pandemic
+    sync_mode: sync
+    collection_mode: default
+    collection_order: critic_rating.desc
+    sort_title: "*416"
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Extra-Genres/main/Pandemic.png
+    schedule: monthly(10)
+    only_filter_missing: true
+  Parody:
+    imdb_list: 
+        - https://www.imdb.com/list/ls088925450
+        - https://www.imdb.com/list/ls021746010/
+        - https://www.imdb.com/list/ls057544801/
+        - https://www.imdb.com/list/ls061358718/
+        - https://www.imdb.com/list/ls063429003/imdb list
+    mdblist_list: https://mdblist.com/lists/hdlists/top-50-parody-movies-of-all-time
+    trakt_list: https://trakt.tv/users/mokorosnik/lists/parodie
+    sync_mode: sync
+    collection_mode: default
+    collection_order: critic_rating.desc
+    sort_title: "*417"
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Extra-Genres/main/Parody.png
+    schedule: monthly(10)
+  Prison:
+    imdb_list:
+      - https://www.imdb.com/list/ls021403323/
+      - https://www.imdb.com/list/ls055859064/
+      - https://www.imdb.com/list/ls053382995/
+      - https://www.imdb.com/list/ls070781658/
+      - https://www.imdb.com/list/ls054662019/
+      - https://www.imdb.com/list/ls021453750/
+    trakt_list: https://trakt.tv/users/rizreflects/lists/prison-movies
+    tmdb_movie:
+      - 440471
+      - 480042
+      - 348893
+      - 51620
+      - 156717
+      - 401478
+    sync_mode: sync
+    collection_mode: default
+    collection_order: critic_rating.desc
+    sort_title: "*418"
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Extra-Genres/main/Prison.png
+    schedule: monthly(10)
+  Seductive:
+    imdb_list: 
+        - https://www.imdb.com/list/ls041366117/
+        - https://www.imdb.com/list/ls000709952/
+        - https://www.imdb.com/list/ls073769473/
+        - https://www.imdb.com/list/ls051533413/
+    trakt_list: https://trakt.tv/users/jenninja/lists/sexy-time
+    sync_mode: append
+    collection_mode: default
+    collection_order: critic_rating.desc
+    sort_title: "*419"
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Extra-Genres/main/Seductive.png
+    schedule: monthly(10)
+  Space:
+    imdb_list: 
+        - https://www.imdb.com/list/ls063225919/
+        - https://www.imdb.com/list/ls056141474/
+        - https://www.imdb.com/list/ls074438504/
+        - https://www.imdb.com/list/ls025756791/
+        - https://www.imdb.com/list/ls082972173/
+    trakt_list: https://trakt.tv/users/weighter/lists/space
+    sync_mode: sync
+    collection_mode: default
+    collection_order: critic_rating.desc
+    sort_title: "*420"
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Extra-Genres/main/Space.png
+    schedule: monthly(10)
+  Spy:
+    imdb_list: 
+        - https://www.imdb.com/list/ls021488235/
+        - https://www.imdb.com/list/ls068127872/
+        - https://www.imdb.com/list/ls040987168/
+        - https://www.imdb.com/list/ls058532916/
+    trakt_list: https://trakt.tv/users/mattgriff/lists/spy-vs-spy
+    tmdb_movie: 458156
+    sync_mode: sync
+    collection_mode: default
+    collection_order: critic_rating.desc
+    sort_title: "*422"
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Extra-Genres/main/Spy.png
+    schedule: monthly(10)
+  Stand-up Comedy:
+    imdb_list: 
+        - https://www.imdb.com/list/ls041728102/
+        - https://www.imdb.com/list/ls055644766/
+        - https://www.imdb.com/list/ls004905199/
+        - https://www.imdb.com/list/ls040686757/
+        - https://www.imdb.com/list/ls066035319/
+        - https://www.imdb.com/list/ls070221411/
+        - https://www.imdb.com/list/ls086584751/
+        - https://www.imdb.com/list/ls086022668/
+        - https://www.imdb.com/list/ls049792208/
+        - https://www.imdb.com/list/ls064092097/
+        - https://www.imdb.com/list/ls088617302/
+    trakt_list: https://trakt.tv/users/del74/lists/stand-up-comedy
+    sync_mode: sync
+    collection_mode: default
+    collection_order: critic_rating.desc
+    sort_title: "*423"
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Stand-Up%20Comedy.jpg
+    schedule: monthly(10)
+  Sword & Scorcery:
+    imdb_list: 
+        - https://www.imdb.com/list/ls507955487/
+        - https://www.imdb.com/list/ls000073140/
+        - https://www.imdb.com/list/ls003107036/
+        - https://www.imdb.com/list/ls051566114/
+    trakt_list: https://trakt.tv/users/n4m3n07f0und/lists/medieval-movies
+    sync_mode: sync
+    collection_mode: default
+    collection_order: critic_rating.desc
+    sort_title: "*424"
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Sword%20&%20Sorcery.jpg
+    schedule: monthly(10)
+  Time Travel:
+    imdb_list: 
+        - https://www.imdb.com/list/ls068617191/
+        - https://www.imdb.com/list/ls058641508/
+        - https://www.imdb.com/list/ls027006753/
+        - https://www.imdb.com/list/ls074708606/
+    trakt_list: https://trakt.tv/users/vagnerr/lists/time-travel
+    sync_mode: sync
+    collection_mode: default
+    collection_order: critic_rating.desc
+    sort_title: "*425"
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Extra-Genres/main/Time%20Travel.png
+    schedule: monthly(10)
+  True Story:
+    imdb_list: 
+        - https://www.imdb.com/list/ls021398170/
+        - https://www.imdb.com/list/ls056684691/
+        - https://www.imdb.com/list/ls057631565/
+    trakt_list: https://trakt.tv/users/rbyrn/lists/true-story
+    sync_mode: sync
+    collection_mode: default
+    collection_order: critic_rating.desc
+    sort_title: "*427"
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Extra-Genres/main/True%20Story.png
+    schedule: monthly(10)
+  Unexpectedly Amazing:
+    imdb_list: 
+        - https://www.imdb.com/list/ls574663351/
+        - https://www.imdb.com/list/ls071821439/
+        - https://www.imdb.com/list/ls062051687/
+        - https://www.imdb.com/list/ls092117268/
+        - https://www.imdb.com/list/ls092816716/
+        - https://www.imdb.com/list/ls000993592/
+    sync_mode: sync
+    collection_mode: default
+    collection_order: critic_rating.desc
+    sort_title: "*428"
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Extra-Genres/main/Unexpectedly%20Amazing.png
+    schedule: yearly(01/30)
+  Video Game:
+    imdb_list: 
+        - https://www.imdb.com/list/ls000021980/
+        - https://www.imdb.com/list/ls003042118/
+        - https://www.imdb.com/list/ls000830173/
+    mdblist_list: https://mdblist.com/lists/awesomeaustn/movies-based-on-video-games-live-action
+    trakt_list: https://trakt.tv/users/29zombies/lists/video-game
+    sync_mode: sync
+    collection_mode: default
+    collection_order: critic_rating.desc
+    sort_title: "*429"
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Extra-Genres/main/Video%20Game.png
+    schedule: monthly(10)
+  Witch:
+    imdb_list: 
+        - https://www.imdb.com/list/ls069626655/
+        - https://www.imdb.com/list/ls020756275/
+        - https://www.imdb.com/list/ls057892035/
+        - https://www.imdb.com/list/ls040584199/
+        - https://www.imdb.com/list/ls062382393/
+    trakt_list: https://trakt.tv/users/sele_nap/lists/witches
+    sync_mode: sync
+    collection_mode: default
+    collection_order: critic_rating.desc
+    sort_title: "*431"
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Extra-Genres/main/Witch.png
+    schedule: monthly(10)
+  Disney Channel Original Movies:
+    imdb_list: https://www.imdb.com/list/ls560667605
+    sync_mode: sync
+    collection_mode: default
+    collection_order: year.asc
+    sort_title: "331a"
+    url_poster: https://preview.redd.it/p76kb5k36in41.jpg?auto=webp&s=ffab9bfee39f821f85d91206fbaa1b0c4f504de1
+    schedule: yearly(01/30)
+#  Abbott & Costello:
+#    imdb_list: https://www.imdb.com/list/ls084772233/
+#    sync_mode: sync
+#    collection_mode: default
+#    collection_order: year.asc
+#    sort_title: "*411"
+#    schedule: yearly(01/30)
+#  Cirque du Soleil:
+#    mdblist_list: https://mdblist.com/lists/awesomeaustn/cirque-du-soleil
+#    sync_mode: sync
+#    collection_mode: default
+#    collection_order: year.asc
+#    sort_title: "*428"
+#    schedule: monthly(10)
+#  Classic Sports Movies:
+#    imdb_list: https://www.imdb.com/list/ls088609451
+#    sync_mode: sync
+#    collection_mode: default
+#    collection_order: year.asc
+#    sort_title: "*431"
+#    schedule: yearly(01/30)
+#  Historical Black Movies:
+#    imdb_list: https://www.imdb.com/list/ls560237349
+#    sync_mode: sync
+#    collection_mode: default
+#    collection_order: year.asc
+#    sort_title: "*429"
+#    schedule: monthly(10)
+#  LGBT:
+#    plex_collection: Rotten Tomatoes - Best LGBT
+#    tmdb_movie:
+#      - 79837
+#      - 261776
+#      - 365126
+#    sync_mode: sync
+#    collection_mode: default
+#    collection_order: year.asc
+#    sort_title: "*419"
+#    schedule: monthly(10)
+#  Music:
+#    imdb_list: https://www.imdb.com/list/ls021457968/
+#    tmdb_movie: 424694
+#    sync_mode: sync
+#    collection_mode: default
+#    collection_order: year.asc
+#    sort_title: "*416"
+#    schedule: monthly(10)
+#  Rock Climbing:
+#    imdb_list: https://www.imdb.com/list/ls084590179/
+#    sync_mode: append            # Append for Dosage Collection. It got removed for some reason while on the IMDb list
+#    collection_mode: default
+#    collection_order: year.asc
+#    sort_title: "*409"

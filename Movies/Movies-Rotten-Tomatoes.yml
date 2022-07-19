@@ -1,0 +1,94 @@
+collections:     
+
+############################
+#     ROTTTEN TOMATOES     #
+############################
+ 
+  Best of 2014:
+    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-2014
+    sync_mode: sync
+    collection_mode: default
+    collection_order: custom
+    sort_title: "*107"
+    schedule: yearly(01/30)
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Rotten-Tomatotes/main/Rotten%20Tomatoes%20Best%20of%202014.png
+  Best of 2015:
+    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-2015
+    sync_mode: sync
+    collection_mode: default
+    collection_order: custom
+    sort_title: "*108"
+    schedule: yearly(01/30)
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Rotten-Tomatotes/main/Rotten%20Tomatoes%20Best%20of%202015.png
+  Best of 2016:
+    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-2016
+    sync_mode: sync
+    collection_mode: default
+    collection_order: custom
+    sort_title: "*109"
+    schedule: yearly(01/30)
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Rotten-Tomatotes/main/Rotten%20Tomatoes%20Best%20of%202016.png
+  Best of 2017:
+    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-2017
+    sync_mode: sync
+    collection_mode: default
+    collection_order: custom
+    sort_title: "*110"
+    schedule: yearly(01/30)
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Rotten-Tomatotes/main/Rotten%20Tomatoes%20Best%20of%202017.png
+  Best of 2018:
+    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-2018
+    sync_mode: sync
+    collection_mode: default
+    collection_order: custom
+    sort_title: "*111"
+    schedule: yearly(01/30)
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Rotten-Tomatotes/main/Rotten%20Tomatoes%20Best%20of%202018.png
+  Best of 2019:
+    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-2019
+    sync_mode: sync
+    collection_mode: default
+    collection_order: custom
+    sort_title: "*112"
+    schedule: yearly(01/30)
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Rotten-Tomatotes/main/Rotten%20Tomatoes%20Best%20of%202019.png
+  Best of 2020:
+    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-2020
+    sync_mode: sync
+    collection_mode: default
+    collection_order: custom
+    sort_title: "*113"
+    schedule: yearly(01/30)
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Rotten-Tomatotes/main/Rotten%20Tomatoes%20Best%20of%202020.png
+  Best of 2021:
+    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-2021
+    sync_mode: sync
+    collection_mode: default
+    collection_order: custom
+    sort_title: "*114"
+    schedule: yearly(01/30)
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Rotten-Tomatotes/main/Rotten%20Tomatoes%20Best%20of%202021.png
+  Best All Time:
+    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-top-100-movies-of-all-time
+    sync_mode: sync
+    collection_mode: default
+    collection_order: custom
+    sort_title: "*115"
+    schedule: monthly(10)
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Rotten-Tomatotes/main/Rotten%20Tomatoes%20Best%20All-Time.png
+  Best Horror:
+    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-horror-movies-of-all-time
+    sync_mode: sync
+    collection_mode: default
+    collection_order: custom
+    sort_title: "*116"
+    schedule: monthly(10)
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Rotten-Tomatotes/main/Rotten%20Tomatoes%20Best%20Horror.png
+  Best Rom Com:
+    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-the-200-best-romantic-comedies-of-all-time
+    sync_mode: sync
+    collection_mode: default
+    collection_order: custom
+    sort_title: "*117"
+    schedule: monthly(10)
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Rotten-Tomatotes/main/Rotten%20Tomatoes%20Best%20Rom%20Com.png
