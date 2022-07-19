@@ -263,7 +263,7 @@ tautulli:                                       # Can be individually specified 
   url: http://localhost:8181
   apikey: correctapihere
 omdb:
-  apikey: a58ae410
+  apikey: correctapihere
   cache_expiration: 60
 mdblist:
   apikey: correctapirehere
