@@ -42,8 +42,8 @@ Movies
 	Rotten Tomatoes:					#AwesomeAustin
 		- Best of 2014-2021
 		- Best All-Time, Rom Com, and Horror
-	Holidays: Never Hidden					#Magic
-		- Christmas815
+	Holidays: Never Hidden					#Magic815
+		- Christmas
 		- Easter
 		- Halloween
 		- Independence Day
