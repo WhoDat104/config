@@ -1,85 +1,41 @@
-#######################################################
-#                  SiskoUrso                          #
-#                TV Collection                        #
-#######################################################
+#######################################
+#          TV Collections             #
+#######################################
 
 templates:
   Collection:
     optional:
-      - list
       - show
       - poster
-    tvdb_list_details: <<list>>
     tvdb_show: <<show>>
     url_poster: <<poster>>
     sync_mode: sync
-    collection_order: release
-    sonarr_add_missing: true
-    sort_title: "400_<<collection_name>>"
-
-#######################################################
-#######################################################
+    collection_order: release.asc
+    sort_title: "100_<<collection_name>>"
 
 collections:
-  Attenborough:
-    template: {name: Collection, show: "79257, 318408, 355229, 318408, 330942, 74372, 78989, 333247, 267319, 85083, 79610, 359251, 259418, 359250, 270679, 290034, 81652, 273424, 302286, 266388, 331098, 348413, 388618, 79947, 262278, 287019, 270732, 420230, 264243, 383268, 397337, 259418, 273424, 166651, 78992, 74373, 410848, 78943, 151521, 265070, 78994, 394827, 349155, 84843, 78992, 258633, 265145, 410564, 265373, 359365, 79616, 283026, 74371, 410034, 251418, 79185, 118421, 340626, 264241, 78993, 230371, 304953, 276537, 316346, 251581, 200931, 80987, 92711, 81394, 287007, 81157, 265773, 311317, 78864, 87911, 352054, 264173, 187731, 259105"}
-    summary: Collection of David Attenborough TV Shows.
-  Battlestar Galactica:
-    template: {name: Collection, show: "73545, 85040, 204781", poster: https://theposterdb.com/api/assets/122190}
-    summary: Collection of Battlestar Galactica Series.
-  C.S.I:
-    template: {name: Collection, show: "72546, 78310, 73696, 281551, 400248", poster: https://theposterdb.com/api/assets/102143}
-    summary: Collection of CSI TV Shows
-  Law & Order:
-    template: {name: Collection, show: "72368, 75692, 71489, 328518, 74191, 168161, 383397", poster: https://theposterdb.com/api/assets/57562}
-    summary: Collection of Law & Order Series.
-  Marvel Television:
-    template: {name: Collection, show: "263365, 281485, 320558, 281662, 284190, 304219, 317953, 326490, 331980, 332027, 341455, 364038, 362392, 362496, 362472, 367147, 368613, 368612, 393204, 393203, 368611, 367146, 393205, 393201, 412429, 412428, 412431, 361834, 361835, 367227, 92782", poster: https://theposterdb.com/api/assets/19667}
-    summary: Collection of shows in the Marvel TV Universe.
-  Narcos:
-    template: {name: Collection, show: "282670, 353232", poster: https://theposterdb.com/api/assets/196849}
-    summary: Anthology of Netflix shows about the Columbia and Mexican drug cartells rise to power in the 1980's.
-  NCIS:
-    template: {name: Collection, show: "73710, 72108, 95441, 278125, 401630", poster: https://theposterdb.com/api/assets/182837}
-    summary: Collection of shows starting from JAG which then spins into NCIS.
-  Star Trek:
-    template: {name: Collection, show: "77526, 73566, 71470, 72073, 74550, 73893, 328711, 364093, 367138, 385811, 382389, 264220", poster: https://theposterdb.com/api/assets/53471}
-    summary: Collection of Star Trek TV Shows
-  Stargate:
-    template: {name: Collection, show: "72449, 70851, 83237, 70852, 339552", poster: https://theposterdb.com/api/assets/210311}
-    summary: Collection of Stargate TV Shows.
-#  Star Wars (Animated):
-#    template: {name: Collection, show: "83268, 283468, 385376, 393190, 72244, 351575, 330710, 250498, 356114, 393214, 70399, 73697, 334444, 368742, 380516, 358145", poster: https://theposterdb.com/api/assets/16243}
-  Star Wars:
-    template: {name: Collection, show: "393199, 393187, 380352, 393218, 361753, 393589, 393189, 393188", poster: https://theposterdb.com/api/assets/39679}
-    summary: Collection of Star Wars TV Series.
-  The Walking Dead:
-    template: {name: Collection, show: "153021, 290853, 372787, 411314, 252861", poster: https://theposterdb.com/api/assets/128886}
-    summary: Collection of Walking Dead TV Shows.
-  The X-Files:
-    template: {name: Collection, show: "77398, 76245", poster: https://theposterdb.com/api/assets/160390}
-    summary: Collection of shows from the X-Files
-#######################################################
- 
-#  Pilots:
-#    collection_level: episode
-#    plex_pilots: true
-#    filters:
-#      any:
-#        genre:
-#          - action
-#          - comedy
-#          - drama
-#          - family
-#          - horror
-#          - mystery
-#          - romance
-#          - sci-fi & fantasy
-#          - science fiction
-#          - thriller
-#          - war
-#          - western
-#      all:
-#        unplayed: true
-#    collection_order: release
-#   
+  Emmy Winning Dramas:
+    template: {name: Collection, show: "81189, 121361, 247897, 305574, 321239, 338186", poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/emmys/winner.jpg}
+    imdb_list: https://www.imdb.com/list/ls008640782/
+    sort_title: "!16_Emmys Best Drama"
+  Anthology:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/WhoDat104/Genres/main/Anthology.jpg}
+    imdb_list: https://www.imdb.com/list/ls069796495/
+    schedule: yearly(03/01)
+  Football:
+    template: {name: Collection, show: "343609, 74094, 355032, 372055, 252053, 84099", poster: https://raw.githubusercontent.com/WhoDat104/Genres/main/Football.jpg}
+    schedule: yearly(03/01)       
+  Medical:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/WhoDat104/Genres/main/Medical.jpg}
+    imdb_list: 
+        - https://www.imdb.com/list/ls064005250/
+        - https://www.imdb.com/list/ls567394825/
+    schedule: yearly(03/01)   
+  Seductive:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/WhoDat104/Genres/main/Seductive.jpg}
+    imdb_list: https://www.imdb.com/list/ls567399815/
+    schedule: yearly(03/01)   
+  Stephen King:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/WhoDat104/Genres/main/Stephen%20King.jpg}
+    imdb_list: https://www.imdb.com/list/ls567399416/
+    schedule: yearly(03/01)       

@@ -1,0 +1,29 @@
+############################
+#      Audio Language      #
+############################
+external_templates:
+  git: PMM/templates
+  template_variables:
+    collection_section: 10
+
+templates:
+  audio_language_dynamic:
+    default:
+      sort_by: release.desc
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/audio_language/<<key>>.jpg
+    smart_filter:
+      sort_by: <<sort_by>>
+      any:
+        audio_language: <<value>>
+
+dynamic_collections:
+  Audio Language:
+    type: audio_language
+    title_format: <<key_name>> Audio
+    template:
+      - audio_language_dynamic
+      - shared
+    include:
+      - fr     # French
+      - de     # German
+      - es     # Spanish, Castilian

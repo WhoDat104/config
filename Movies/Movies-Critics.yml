@@ -1,0 +1,243 @@
+############################
+#         Critics          #
+############################
+external_templates:
+  git: PMM/templates
+  template_variables:
+    collection_section: 16
+
+templates:
+  BAFTA:
+    allowed_library_types: movie
+    summary: <<key>> BAFTA awards
+    trakt_list: https://trakt.tv/users/pjcob/lists/<<key>>-bafta
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/bafta/<<key>>.jpg
+  Cannes:
+    allowed_library_types: movie
+    summary: <<key>> Cannes awards
+    trakt_list: https://trakt.tv/users/pjcob/lists/<<key>>-cannes
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/cannes/<<key>>.jpg
+  Choice:
+    default:
+      url: critic-s
+    summary: <<key>> Critics Choice Awards
+    trakt_list: https://trakt.tv/users/pjcob/lists/<<key>>-<<url>>-choice
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/choice/<<key>>.jpg
+  Golden:
+    default:
+      imdb_sort: moviemeter,asc
+    summary: <<key>> Golden Globe Winners
+    imdb_list: https://www.imdb.com/search/title/?release_date=<<key>>-01-01,<<key>>-12-31&groups=golden_globe_winner&sort=<<imdb_sort>>
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/golden/winner/<<key>>.jpg
+  Rotten Tomatoes:
+    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-<<key>>
+    sync_mode: sync
+    collection_mode: default
+    collection_order: custom
+    sort_title: "!16_Rotten Tomatoes Best of <<key>>"
+    schedule: yearly(01/30)
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Critics/Rotten Tomatoes/Rotten Tomatoes Best of <<key>>.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Rotten-Tomatotes/main/Rotten%20Tomatoes%20Best%20of%20<<key>>.png
+  Spirit:
+    allowed_library_types: movie
+    summary: <<key>> Independent Spirit Awards
+    trakt_list: https://trakt.tv/users/pjcob/lists/<<key>>-independent-spirits
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/spirit/<<key>>.jpg
+  Sundance:
+    allowed_library_types: movie
+    summary: Sundance Film Festival of <<key>>
+    trakt_list: https://trakt.tv/users/pjcob/lists/<<key>>-sundance
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/sundance/<<key>>.jpg
+
+collections:
+  "100 Years... 100 Movies":
+    imdb_list: https://www.imdb.com/list/ls027841309/
+    collection_order: custom
+    sort_title: "!16_AFI"
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Critics/100 Years... 100 Movies.jpg
+    schedule: yearly(01/30)
+  BAFTA Best Films:
+    template:
+      - name: award
+        image: bafta/winner
+      - name: shared
+        sort: BAFTA !
+    allowed_library_types: movie
+    sort_title: "!16_BAFTA !1"
+    trakt_list_details: https://trakt.tv/users/maxwelldeux/lists/bafta-award-best-film
+  Berlinale:
+    template:
+      - name: award
+        image: berlinale/winner
+      - name: shared
+    allowed_library_types: movie
+    trakt_list_details: https://trakt.tv/users/maxwelldeux/lists/berlin-international-film-festival-golden-bears
+    sort_title: "!16_Berlinale !1"
+  Cannes - Palme d'or:
+    template:
+      - name: award
+        image: cannes/winner
+      - name: shared
+        sort: Cannes !
+    allowed_library_types: movie
+    sort_title: "!16_Cannes !1"
+    trakt_list_details: https://trakt.tv/users/maxwelldeux/lists/cannes-film-festival-palme-d-or
+  Cesar:
+    template:
+      - name: award
+        image: cesar/winner
+      - name: shared
+    allowed_library_types: movie
+    trakt_list_details: https://trakt.tv/users/maxwelldeux/lists/cesar-award-best-french-film
+    sort_title: "!16_Cesar !1"
+  Criterion Collection:
+    imdb_list: https://www.imdb.com/list/ls063225919/
+    trakt_list: https://trakt.tv/users/radiostarred/lists/the-criterion-collection?sort=rank,asc
+    collection_order: critic_rating.desc
+    sort_title: "!16_Criterion Collection"
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Critics/Criterion Collection.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Extra-Genres/main/Criterion%20Collection.png
+    schedule: monthly(10)
+  Golden Globe Best Motion Pictures:
+    template:
+      - name: award
+        image: golden/best_picture_winner
+      - name: shared
+        sort: Golden Globes !1
+    sort_title: "!16_Golden Globes !1"
+    trakt_list_details: https://trakt.tv/users/maxwelldeux/lists/golden-globe-award-best-motion-picture
+  Rotten Tomatoes Best All-Time:
+    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-top-100-movies-of-all-time
+    sync_mode: sync
+    collection_mode: default
+    collection_order: custom
+    sort_title: "!16_Rotten !1"
+    schedule: monthly(10)
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Critics/Rotten Tomatoes/Rotten Tomatoes Best All-Time.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Rotten-Tomatotes/main/Rotten%20Tomatoes%20Best%20All-Time.png
+  Rotten Tomatoes Best Horror:
+    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-horror-movies-of-all-time
+    sync_mode: sync
+    collection_mode: default
+    collection_order: custom
+    sort_title: "!16_Rotten !2"
+    schedule: monthly(10)
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Critics/Rotten Tomatoes/Rotten Tomatoes Best Horror.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Rotten-Tomatotes/main/Rotten%20Tomatoes%20Best%20Horror.png
+  Rotten Tomatoes Best Rom Com:
+    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-the-200-best-romantic-comedies-of-all-time
+    sync_mode: sync
+    collection_mode: default
+    collection_order: custom
+    sort_title: "!16_Rotten !3"
+    schedule: monthly(10)
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Critics/Rotten Tomatoes/Rotten Tomatoes Best Rom Com.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Rotten-Tomatotes/main/Rotten%20Tomatoes%20Best%20Rom%20Com.png
+  Sundance Grand Jury Winners:
+    template:
+      - name: award
+        image: sundance/grand_jury_winner
+      - name: shared
+        sort: Sundance !1
+    allowed_library_types: movie
+    sort_title: "!16_Sundance !1"
+    trakt_list_details: https://trakt.tv/users/maxwelldeux/lists/sundance-film-festival-grand-jury-prize
+  Venice:
+    template:
+      - name: award
+        image: venice/winner
+      - name: shared
+    allowed_library_types: movie
+    trakt_list_details: https://trakt.tv/users/maxwelldeux/lists/venice-film-festival-golden-lion
+    sort_title: "!16_Venice !1"
+    
+dynamic_collections:
+  BAFTA Awards:
+    type: number
+    sync: true
+    data:
+      starting: current_year-1
+      ending: current_year
+    title_format: BAFTA <<key_name>>
+    template:
+      - use_year_collections
+      - BAFTA
+      - award
+      - shared
+  Cannes Awards:
+    type: number
+    sync: true
+    data:
+      starting: current_year-1
+      ending: current_year
+    title_format: Cannes <<key_name>>
+    template:
+      - use_year_collections
+      - Cannes
+      - award
+      - shared   
+  Critics Choice Awards:
+    type: number
+    sync: true
+    data:
+      starting: current_year-1
+      ending: current_year
+    title_format: Critics Choice Awards <<key_name>>
+    template:
+      - use_year_collections
+      - Choice
+      - award
+      - shared
+    template_variables:
+      url:
+        2019: critics
+        2018: critics
+        2017: critics
+        2016: critics
+        2015: critics
+        2014: critics   
+  Golden Globes Awards:
+    type: number
+    sync: true
+    data:
+      starting: current_year-1
+      ending: current_year
+    title_format: Golden Globes <<key_name>>
+    template:
+      - use_year_collections
+      - Golden
+      - award
+      - shared
+  Independent Spirit Awards Awards:
+    type: number
+    sync: true
+    data:
+      starting: current_year-1
+      ending: current_year
+    title_format: Independent Spirit Awards <<key_name>>
+    template:
+      - use_year_collections
+      - Spirit
+      - award
+  Rotten Tomatoes Best of:
+    type: number
+    sync: true
+    data:
+      starting: current_year-2
+      ending: current_year-1
+    title_format: Rotten Tomatoes Best of <<key_name>>
+    template:
+      - Rotten Tomatoes
+  Sundance Film Festival:
+    type: number
+    sync: true
+    data:
+      starting: current_year-1
+      ending: current_year
+    title_format: Sundance Film Festival <<key_name>>
+    template:
+      - use_year_collections
+      - Sundance
+      - award
+      - shared
+      - shared

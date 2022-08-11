@@ -1,0 +1,37 @@
+############################
+#         Country          #
+############################
+
+external_templates:
+  git: PMM/templates
+  template_variables:
+    collection_section: "09"
+
+templates:
+  country_tv_dynamic:
+    default:
+      sort_by: release.desc
+      style: color
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/country/<<style>>/<<key_name_encoded>>.jpg
+    collection_order: <<sort_by>>
+    plex_all: true
+    filters:
+      origin_country: <<value>>
+
+dynamic_collections:
+  TMDb Country Color:
+    type: origin_country
+    title_format: <<key_name>>
+    template:
+      - country_tv_dynamic
+      - shared
+    include:
+      - au          
+      - ca
+     - cn
+     - fr
+     - de
+     - ie
+     - nz
+     - es
+     - gb

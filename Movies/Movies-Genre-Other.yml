@@ -1,0 +1,114 @@
+##################################
+#          Other Genres          #
+##################################
+collections:
+  Animation:
+    smart_filter:
+      sort_by: audience_rating.desc
+      genre: animation
+      content_rating: G, PG
+    sort_title: "*400"
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Animation.jpg
+  Comedy Horror:
+    smart_filter:
+      sort_by: audience_rating.desc
+      all:
+        genre: 
+          - comedy
+          - horror
+    sort_title: "*402"
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Topics/Comedy Horror.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Genres/main/Comedy%20Horror.jpg
+  Documentary:
+    smart_filter:
+      sort_by: audience_rating.desc
+      genre: documentary
+    sort_title: "*408"
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Documentary.jpg    
+  Foreign:
+    sort_title: '*411'
+    sync_mode: sync
+    smart_filter:
+      any:
+        audio_language:
+         - ar  # Arabic
+         - bs  # Bosnian
+         - zh  # Chinese
+         - cs  # Czech
+         - da  # Danish
+         - nl  # Dutch
+         - fo  # Faroese
+         - fil # Filipino
+         - fi  # Finnish
+         - fr  # French
+         - de  # German
+         - hu  # Hungarian
+         - id  # Indonesian
+         - it  # Italian
+         - ja  # Japanese
+         - kn  # Kannada
+         - ms  # Malay  
+         - ml  # Malayalam
+         - no  # Norwegian
+         - pl  # Polish
+         - ro  # Romanian
+         - ru  # Russian
+         - sr  # Serbian
+         - sv  # Swedish
+         - ta  # Tamil
+         - tr  # Turkish
+         - uk  # Ukranian     
+        all:
+          country.not:
+            - United States of America
+            - United Kingdom
+            - Canada       
+      sort_by: audience_rating.desc
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Topics/Foreign.jpg 
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Genres/main/Foreign.jpg  
+#  Foreign:                                         ## More accurate for Foreign Films, but plex_all takes much, much longer.
+#    collection_order: audience_rating.desc
+#    plex_all: true
+#    filters:
+#      original_language.not: en
+#    sort_title: "*411"
+#    #url_poster: https://raw.githubusercontent.com/WhoDat104/Genres/main/Foreign.jpg   
+  Romantic Comedy:
+    smart_filter:
+      sort_by: audience_rating.desc
+      all:
+        genre: 
+          - comedy
+          - romance
+    sort_title: "*418a" 
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Romantic%20Comedy.jpg     
+  Sport:
+    smart_filter:
+      sort_by: audience_rating.desc
+      all:
+        genre: 
+          - sport
+    sort_title: "*421" 
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Sport.jpg     
+  True Crime:
+    smart_filter:
+      sort_by: audience_rating.desc
+      all:
+        genre:
+        - documentary
+        - crime
+    sort_title: "*430"
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Topics/True Crime.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Genres/main/True%20Crime.jpg 
+  War:
+    smart_filter:
+      sort_by: audience_rating.desc
+      genre: war
+    sort_title: "*430"
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/War.jpg         
+  Western:
+    smart_filter:
+      sort_by: audience_rating.desc
+      genre: western
+    sort_title: "*432"
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Western.jpg          

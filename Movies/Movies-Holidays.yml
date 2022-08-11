@@ -1,110 +1,56 @@
-collections: 
-
 ############################
 #         HOLIDAYS         #
 ############################
-
+collections: 
   Christmas:
-    imdb_list:
-      - https://www.imdb.com/list/ls000096828/
-      - https://www.imdb.com/list/ls097394442/
-      - https://www.imdb.com/list/ls068976997/
-      - https://www.imdb.com/list/ls027567380/
-      - https://www.imdb.com/list/ls025976544/
-      - https://www.imdb.com/list/ls003863000/
-      - https://www.imdb.com/list/ls027454200/
-      - https://www.imdb.com/list/ls027886673/
-      - https://www.imdb.com/list/ls097998599/
-    trakt_list:
-      - https://trakt.tv/users/movistapp/lists/christmas-movies
-      - https://trakt.tv/users/2borno2b/lists/christmas-movies-extravanganza
-      - https://trakt.tv/users/pualani78/lists/christmas-2020
-      - https://trakt.tv/users/veninjak/lists/complete-christmas-2021-copy
-    sync_mode: sync
-    collection_mode: default
+    imdb_list: https://www.imdb.com/list/ls567453036/
+    trakt_list: https://trakt.tv/users/2borno2b/lists/christmas-movies-extravanganza
     collection_order: critic_rating.desc
     sort_title: "*700"
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/christmas.jpg
     schedule: yearly(11/30)
   Easter:
-    imdb_list: 
-      - https://www.imdb.com/list/ls062665509/
-      - https://www.imdb.com/list/ls051733651/
-    sync_mode: sync
-    collection_mode: default
+    imdb_list: https://www.imdb.com/list/ls567453571/
     collection_order: critic_rating.desc
     sort_title: "*701"
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/easter.jpg
     schedule: yearly (04/01)
   Halloween:
-    imdb_list:
-      - https://www.imdb.com/list/ls023118929/
-      - https://www.imdb.com/list/ls000099714/
-      - https://www.imdb.com/list/ls000058693/
+    imdb_list: 
+      - https://www.imdb.com/list/ls567453106/
+      - https://www.imdb.com/search/title/?genres=horror&keywords=halloween&sort=moviemeter,asc
       - https://www.imdb.com/search/title/?genres=horror&keywords=haunted-house&sort=moviemeter,asc
-    tmdb_collection:
-      - 91361    # Halloween Collection
-      - 8581     # A Nightmare on Elm Street Collection
-      - 1733     # The Mummy Collection
-      - 8091     # Alien Collection
-    tmdb_movie:
-      - 23437    # A Nightmare on Elm Street (2010)
-    trakt_list:
-      - https://trakt.tv/users/kairbear08/lists/halloween
-      - https://trakt.tv/users/mybicycle/lists/halloween
-      - https://trakt.tv/users/jayinftl/lists/halloween
-      - https://trakt.tv/users/roswellgeek/lists/halloween
-    sync_mode: sync
-    collection_mode: default
+    trakt_list: https://trakt.tv/users/jayinftl/lists/halloween
     collection_order: critic_rating.desc
     sort_title: "*702"
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/halloween.jpg
     schedule: yearly(09/30)
-  Independence Day Films:
-    imdb_list:
-      - https://www.imdb.com/list/ls063503978/
-      - https://www.imdb.com/list/ls068664510/
-      - https://www.imdb.com/list/ls000858190/
-      - https://www.imdb.com/list/ls022279733/
-    sync_mode: sync
-    collection_mode: default
+  Independence Day:
+    imdb_list: https://www.imdb.com/list/ls567453110/
     collection_order: critic_rating.desc
     sort_title: "*703"
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/independence.jpg
     schedule: yearly(6/15)
-  New Year's Eve:
+  New Year:
     imdb_list: https://www.imdb.com/list/ls066838460/
-    sync_mode: sync
-    collection_mode: default
     collection_order: critic_rating.desc
     sort_title: "*704"
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/years.jpg
     schedule: yearly(12/15)
-  St. Patricks Day:
+  St. Patrick's Day:
     imdb_list: https://www.imdb.com/list/ls063934595/
-    sync_mode: sync
-    collection_mode: default
     collection_order: critic_rating.desc
     sort_title: "*705"
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/patrick.jpg
     schedule: yearly(03/01)
   Thanksgiving:
-    imdb_list:
-     - https://www.imdb.com/list/ls000835734
-     - https://www.imdb.com/list/ls091597850
-    sync_mode: sync
-    collection_mode: default
+    imdb_list: https://www.imdb.com/list/ls567453345/
     collection_order: critic_rating.desc
     sort_title: "*706"
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/thanksgiving.jpg
     schedule: yearly(11/01)
-  Valentines Day:
-    imdb_list:
-     - https://www.imdb.com/list/ls000094398
-     - https://www.imdb.com/list/ls057783436
-     - https://www.imdb.com/list/ls064427905
-    sync_mode: sync
-    collection_mode: default
+  Valentine's Day:
+    imdb_list: https://www.imdb.com/list/ls567453394/
     collection_order: critic_rating.desc
     sort_title: "*707"
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/valentine.jpg

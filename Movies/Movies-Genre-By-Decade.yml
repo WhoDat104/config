@@ -1,0 +1,334 @@
+##################################
+#            Genre by            #
+#             Decade             #
+#                                #
+##################################
+templates:
+  Collection:
+    smart_filter:
+      sort_by: audience_rating.desc
+      decade: <<decade>>
+      genre: <<genre>>
+      genre.not: documentary, animation
+      release.not: <<release>>                          # Decreases recency bias in ratings.
+      collection.not: <<notfrom>>
+      year.lte: <<year>>
+    optional:
+      - decade
+      - genre
+      - notfrom
+      - release
+      - year
+collections:
+  All-Time Action:
+    template: {name: Collection, genre: action, release: 1095}
+    sort_title: 100_Action
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/All-Time Action.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/All-Time%20Action.png
+  All-Time Comedy:
+    template: {name: Collection, genre: comedy, release: 1095, notfrom: Stand-up Comedy}
+    sort_title: 100_Comedy
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/All-Time Comedy.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/All-Time%20Comedy.png
+  All-Time Drama:
+    template: {name: Collection, genre: drama, release: 1095}
+    sort_title: 100_Drama
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/All-Time Drama.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/All-Time%20Drama.png
+  All-Time Family:
+    template: {name: Collection, genre: family, release: 1095}
+    sort_title: 100_Family
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/All-Time Family.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/All-Time%20Family.png    
+  All-Time Horror:
+    template: {name: Collection, genre: horror, release: 1095}
+    sort_title: 100_Horror
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/All-Time Horror.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/All-Time%20Horror.png
+  All-Time Romance:
+    template: {name: Collection, genre: romance, release: 1095}
+    sort_title: 100_Romance
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/All-Time Romance.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/All-Time%20Romance.png 
+  All-Time Sci-Fi:
+    template: {name: Collection, genre: science fiction, release: 1095}
+    sort_title: 100_Sci-Fi
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/All-Time Sci-Fi.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/All-Time%20Sci-Fi.png 
+  All-Time Thriller:
+    template: {name: Collection, genre: thriller, release: 1095}
+    sort_title: 100_Thriller
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/All-Time Thriller.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/All-Time%20Thriller.png 
+  All-Time Top Films:
+    template: {name: Collection, release: 1095}
+    sort_title: 100
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/All-Time Top Films.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/All-Time%20Top%20Films.png 
+  Early Action:
+    template: {name: Collection, year: 1969, genre: action}
+    sort_title: 120_<<collection_name>>   
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/Early Action.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/Early%20Action.png
+  Early Comedy:
+    template: {name: Collection, year: 1969, genre: comedy, notfrom: Stand-up Comedy}
+    sort_title: 120_<<collection_name>>   
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/Early Comedy.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/Early%20Drama.png
+  Early Drama:
+    template: {name: Collection, year: 1969, genre: drama}
+    sort_title: 120_<<collection_name>>   
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/Early Drama.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/Early%20Drama.png
+  Early Family:
+    template: {name: Collection, year: 1969, genre: family}
+    sort_title: 120_<<collection_name>>   
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/Early Family.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/Early%20Family.png
+  Early Horror:
+    template: {name: Collection, year: 1969, genre: horror}
+    sort_title: 120_<<collection_name>>   
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/Early Horror.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/Early%20Horror.png
+  Early Romance:
+    template: {name: Collection, year: 1969, genre: romance}
+    sort_title: 120_<<collection_name>>   
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/Early Romance.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/Early%20Romance.png
+  Early Sci-Fi:
+    template: {name: Collection, year: 1969, genre: science fiction}
+    sort_title: 120_<<collection_name>>   
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/Early Sci-Fi.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/Early%20Sci-Fi.png
+  Early Thriller:
+    template: {name: Collection, year: 1969, genre: thriller}
+    sort_title: 120_<<collection_name>>   
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/Early Thriller.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/Early%20Thriller.png
+  Early Top Films:
+    template: {name: Collection, year: 1969}
+    sort_title: 120   
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/Early Top Films.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/Early%20Top%20Films.png
+  1970s Action:
+    template: {name: Collection, decade: 1970, genre: action}
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/1970s Action.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/1970s%20Action.png
+  1970s Comedy:
+    template: {name: Collection, decade: 1970, genre: comedy, notfrom: Stand-up Comedy}
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/1970s Comedy.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/1970s%20Comedy.png
+  1970s Drama:
+    template: {name: Collection, decade: 1970, genre: drama}
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/1970s Drama.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/1970s%20Drama.png
+  1970s Family:
+    template: {name: Collection, decade: 1970, genre: family}
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/1970s Family.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/1970s%20Family.png
+  1970s Horror:
+    template: {name: Collection, decade: 1970, genre: horror}
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/1970s Horror.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/1970s%20Horror.png
+  1970s Romance:
+    template: {name: Collection, decade: 1970, genre: romance}
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/1970s Romance.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/1970s%20Romance.png
+  1970s Sci-Fi:
+    template: {name: Collection, decade: 1970, genre: science fiction}
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/1970s Sci-Fi.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/1970s%20Sci-Fi.png
+  1970s Thriller:
+    template: {name: Collection, decade: 1970, genre: thriller}
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/1970s Thriller.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/1970s%20Thriller.png
+  1970s Top Films:
+    template: {name: Collection, decade: 1970}
+    sort_title: 1970
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/1970s Top Films.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/1970s%20Top%20Films.png
+  1980s Action:
+    template: {name: Collection, decade: 1980, genre: action}
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/1980s Action.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/1980s%20Action.png
+  1980s Comedy:
+    template: {name: Collection, decade: 1980, genre: comedy, notfrom: Stand-up Comedy}
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/1980s Comedy.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/1980s%20Comedy.png
+  1980s Drama:
+    template: {name: Collection, decade: 1980, genre: drama}
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/1980s Drama.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/1980s%20Drama.png
+  1980s Family:
+    template: {name: Collection, decade: 1980, genre: family}
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/1980s Family.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/1980s%20Family.png
+  1980s Horror:
+    template: {name: Collection, decade: 1980, genre: horror}
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/1980s Horror.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/1980s%20Horror.png
+  1980s Romance:
+    template: {name: Collection, decade: 1980, genre: romance}
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/1980s Romance.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/1980s%20Romance.png
+  1980s Sci-Fi:
+    template: {name: Collection, decade: 1980, genre: science fiction}
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/1980s Sci-Fi.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/1980s%20Sci-Fi.png
+  1980s Thriller:
+    template: {name: Collection, decade: 1980, genre: thriller}
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/1980s Thriller.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/1980s%20Thriller.png
+  1980s Top Films:
+    template: {name: Collection, decade: 1980}
+    sort_title: 1980
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/1980s Top Films.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/1980s%20Top%20Films.png
+  1990s Action:
+    template: {name: Collection, decade: 1990, genre: action}
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/1990s Action.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/1990s%20Action.png
+  1990s Comedy:
+    template: {name: Collection, decade: 1990, genre: comedy, notfrom: Stand-up Comedy}
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/1990s Comedy.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/1990s%20Comedy.png
+  1990s Drama:
+    template: {name: Collection, decade: 1990, genre: drama}
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/1990s Drama.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/1990s%20Drama.png
+  1990s Family:
+    template: {name: Collection, decade: 1990, genre: family}
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/1990s Family.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/1990s%20Family.png
+  1990s Horror:
+    template: {name: Collection, decade: 1990, genre: horror}
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/1990s Horror.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/1990s%20Horror.png
+  1990s Romance:
+    template: {name: Collection, decade: 1990, genre: romance}
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/1990s Romance.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/1990s%20Romance.png    
+  1990s Sci-Fi:
+    template: {name: Collection, decade: 1990, genre: science fiction}
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/1990s Sci-Fi.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/1990s%20Sci-Fi.png
+  1990s Thriller:
+    template: {name: Collection, decade: 1990, genre: thriller}
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/1990s Thriller.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/1990s%20Thriller.png
+  1990s Top Films:
+    template: {name: Collection, decade: 1990}
+    sort_title: 1990
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/1990s Top Films.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/1990s%20Top%20Films.png
+  2000s Action:
+    template: {name: Collection, decade: 2000, genre: action}
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/2000s Action.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/2000s%20Action.png
+  2000s Comedy:
+    template: {name: Collection, decade: 2000, genre: comedy, notfrom: Stand-up Comedy}
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/2000s Comedy.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/2000s%20Comedy.png
+  2000s Drama:
+    template: {name: Collection, decade: 2000, genre: drama}
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/2000s Drama.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/2000s%20Drama.png
+  2000s Family:
+    template: {name: Collection, decade: 2000, genre: family}
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/2000s Family.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/2000s%20Family.png
+  2000s Horror:
+    template: {name: Collection, decade: 2000, genre: horror}
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/2000s Horror.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/2000s%20Horror.png
+  2000s Romance:
+    template: {name: Collection, decade: 2000, genre: romance}
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/2000s Romance.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/2000s%20Romance.png
+  2000s Sci-Fi:
+    template: {name: Collection, decade: 2000, genre: science fiction}
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/2000s Sci-Fi.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/2000s%20Sci-Fi.png
+  2000s Thriller:
+    template: {name: Collection, decade: 2000, genre: thriller}
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/2000s Thriller.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/2000s%20Thriller.png
+  2000s Top Films:
+    template: {name: Collection, decade: 2000}
+    sort_title: 2000
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/2000s Top Films.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/2000s%20Top%20Films.png
+  2010s Action:
+    template: {name: Collection, decade: 2010, genre: action}
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/2010s Action.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/2010s%20Action.png
+  2010s Comedy:
+    template: {name: Collection, decade: 2010, genre: comedy, notfrom: Stand-up Comedy}
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/2010s Comedy.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/2010s%20Comedy.png
+  2010s Drama:
+    template: {name: Collection, decade: 2010, genre: drama}
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/2010s Drama.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/2010s%20Drama.png
+  2010s Family:
+    template: {name: Collection, decade: 2010, genre: family}
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/2010s Family.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/2010s%20Family.png
+  2010s Horror:
+    template: {name: Collection, decade: 2010, genre: horror}
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/2010s Horror.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/2010s%20Horror.png
+  2010s Romance:
+    template: {name: Collection, decade: 2010, genre: romance}
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/2010s Romance.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/2010s%20Romance.png
+  2010s Sci-Fi:
+    template: {name: Collection, decade: 2010, genre: science fiction}
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/2010s Sci-Fi.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/2010s%20Sci-Fi.png
+  2010s Thriller:
+    template: {name: Collection, decade: 2010, genre: thriller}
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/2010s Thriller.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/2010s%20Thriller.png
+  2010s Top Films:
+    template: {name: Collection, decade: 2010}
+    sort_title: 2010
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/2010s Top Films.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/2010s%20Top%20Films.png
+  2020s Action:
+    template: {name: Collection, decade: 2020, genre: action} 
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/2020s Action.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/2020s%20Action.png
+  2020s Comedy:
+    template: {name: Collection, decade: 2020, genre: comedy, notfrom: Stand-up Comedy} 
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/2020s Comedy.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/2020s%20Comedy.png    
+  2020s Drama:
+    template: {name: Collection, decade: 2020, genre: drama} 
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/2020s Drama.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/2020s%20Drama.png    
+  2020s Family:
+    template: {name: Collection, decade: 2020, genre: family} 
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/2020s Family.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/2020s%20Family.png
+  2020s Horror:
+    template: {name: Collection, decade: 2020, genre: horror} 
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/2020s Horror.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/2020s%20Horror.png
+  2020s Romance:
+    template: {name: Collection, decade: 2020, genre: romance} 
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/2020s Romance.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/2020s%20Romance.png   
+  2020s Sci-Fi:
+    template: {name: Collection, decade: 2020, genre: science fiction} 
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/2020s Sci-Fi.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/2020s%20Sci-Fi.png
+  2020s Thriller:
+    template: {name: Collection, decade: 2020, genre: thriller} 
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/2020s Thriller.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/2020s%20Thriller.png
+  2020s Top Films:
+    template: {name: Collection, decade: 2020}
+    sort_title: 2020
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Decades by Genre/2020s Top Films.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Decades-by-Genre/main/2020s%20Top%20Films.png    

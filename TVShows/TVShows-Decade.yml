@@ -1,0 +1,34 @@
+##################################
+#             Decade             #
+##################################
+templates:
+  Collection:
+    smart_filter:
+      sort_by: audience_rating.desc
+      release.after: <<after>>
+      release.before: <<before>>
+      genre.not: documentary
+    sort_title: "!12_<<collection_name>>"
+    
+collections:
+  Best of 1960s:
+    template: {name: Collection, after: 12/31/1959, before: 1/1/1970}
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/decade/1960.jpg
+  Best of 1970s:
+    template: {name: Collection, after: 12/31/1969, before: 1/1/1980}
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/decade/1970.jpg
+  Best of 1980s:
+    template: {name: Collection, after: 12/31/1979, before: 1/1/1990}
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/decade/1980.jpg
+  Best of 1990s:
+    template: {name: Collection, after: 12/31/1989, before: 1/1/2000}
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/decade/1990.jpg
+  Best of 2000s:
+    template: {name: Collection, after: 12/31/1999, before: 1/1/2010}
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/decade/2000.jpg
+  Best of 2010s:
+    template: {name: Collection, after: 12/31/2009, before: 1/1/2020}
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/decade/2010.jpg
+  Best of 2020s:
+    template: {name: Collection, after: 12/31/2019, before: 1/1/2030}
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/decade/2020.jpg

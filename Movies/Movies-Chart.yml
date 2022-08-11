@@ -1,0 +1,121 @@
+############################
+#           Chart          #
+############################
+external_templates:
+  git: PMM/templates
+  template_variables:
+    collection_section: "01"
+
+templates:
+  imdb:
+    imdb_chart: <<chart>>_<<library_type>>s
+    collection_order: custom
+    sync_mode: sync
+  released:
+    default:
+      in_the_last_released: 90
+    summary: A collection of newly-released <<library_type>>s.
+    smart_filter:
+      all:
+        release: <<in_the_last_released>>
+      sort_by: release.desc
+  popular:
+    default:
+      limit_popular: 100
+    tmdb_popular: <<limit_popular>>
+    summary: A collection of the most watched <<library_type>>s according to TMDb.
+  top:
+    default:
+      limit_top: 100
+    tmdb_top_rated: <<limit_top>>
+    summary: A collection of the top rated <<library_type>>s according to TMDb.
+  trending:
+    default:
+      limit_trending: 100
+    tmdb_trending_weekly: <<limit_trending>>
+    summary: A collection of <<library_type>>s trending on TMDb
+    
+collections:
+  IMDb Popular:
+    template:
+      - name: imdb
+        chart: popular
+      - name: chart_shared
+        key: popular
+  IMDb Top 250:
+    template:
+      - name: imdb
+        chart: top
+      - name: chart_shared
+        key: top
+  IMDb Lowest Rated:
+    imdb_chart: lowest_rated
+    collection_order: custom
+    sync_mode: sync
+    template:
+      - name: chart_shared
+        key: lowest
+        check_library: movie
+    sort_title: "!01_IMDb Z"
+  Newly Released:
+    template:
+      - name: released
+      - name: chart_shared
+        key: released
+  TMDb Popular:
+    template:
+      - name: popular
+      - name: customsync
+      - name: chart_shared
+        key: popular
+  TMDb Top Rated:
+    template:
+      - name: top
+      - name: customsync
+      - name: chart_shared
+        key: top
+  TMDb Trending:
+    template:
+      - name: trending
+      - name: customsync
+      - name: chart_shared
+        key: trending
+  Top 10 Pirated Movies of the Week:
+    mdblist_list: https://mdblist.com/lists/hdlists/top-ten-pirated-movies-of-the-week-torrent-freak-com/
+    summary: Most Pirated Movies of The Week
+    template:
+      - name: customsync
+      - name: chart_shared
+        key: pirated
+        
+###########################################################
+
+#  9.5+ Movies:
+#    smart_filter:
+#      all:
+#        critic_rating.gte: 9.5
+#      sort_by: release.asc
+#    sort_title: "*102"
+#    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Critics/Critic Rating.jpg
+#    schedule: weekly(thursday) 
+  1001 Movies You Must See Before You Die:
+    trakt_list: https://trakt.tv/users/sp1ti/lists/1001-movies-you-must-see-before-you-die
+    collection_order: release.desc
+    sort_title: "*103"
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Critics/1001 Movies.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Extra-Genres/main/1001%20Movies.png
+    schedule: monthly(10)
+  Top Grossing Films Annually:
+    imdb_list: https://www.imdb.com/list/ls000065674/
+    collection_order: release.desc
+    sort_title: "*105"
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Critics/Top Grossing Annually.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Extra-Genres/main/Top%20Grossing%20Annually.png
+    schedule: yearly (01/30)  
+  Top 50 Grossing Films of All-Time:
+    tmdb_list: https://www.themoviedb.org/list/10
+    collection_order: custom
+    sort_title: "*106"
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Critics/Top Grossing All-Time.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Extra-Genres/main/Top%20Grossing%20All-Time.png
+    schedule: monthly(20)          

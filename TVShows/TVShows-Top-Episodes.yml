@@ -1,0 +1,259 @@
+#######################################################
+#                 Top Episodes                        #
+#                TV Collections                       #
+#######################################################
+templates:
+  Collection:
+    optional:
+      - show
+      - poster
+    tvdb_show: <<show>>
+    url_poster: <<poster>>
+    sync_mode: sync
+    schedule: yearly (02/01)
+
+collections:
+   Top 100 Alfred Hitchcock Present's Episodes:
+     collection_order: custom
+     collection_level: episode
+     sort_title: Z_01
+     plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 100
+       all:
+         title.ends: "alfred hitchcock presents"
+     summary: A collection of the highest rated Alfred Hitchcock Present's episodes.
+   Top 50 American Greed Episodes:
+     collection_order: custom
+     collection_level: episode
+     sort_title: Z_02
+     plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 50
+       all:
+         title.ends: "american greed"
+     summary: A collection of the highest rated American Greed episodes.
+   Top 100 American Pickers Episodes:
+     collection_order: custom
+     collection_level: episode
+     sort_title: Z_03
+     plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 100
+       all:
+         title.ends: "american pickers"
+     summary: A collection of the highest rated American Pickers episodes.
+   Top 100 Ancient Aliens Episodes:
+     collection_order: custom
+     collection_level: episode
+     sort_title: Z_04
+     plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 100
+       all:
+         title.ends: "ancient aliens"
+     summary: A collection of the highest rated Ancient Aliens episodes.
+   Top 100 American Dad! Episodes:
+     collection_order: custom
+     collection_level: episode
+     sort_title: Z_05
+     plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 100
+       all:
+         title.ends: "american dad!"
+     summary: A collection of the highest rated American Dad! episodes.
+   Top 100 Comedy Central Presents Episodes:
+     collection_order: custom
+     collection_level: episode
+     sort_title: Z_06
+     plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 100
+       all:
+         title.ends: "comedy central presents"
+     summary: A collection of the highest rated Comedy Central Presents episodes.
+   Top 100 Doctor Who Episodes:
+     collection_order: custom
+     collection_level: episode
+     sort_title: Z_07
+     plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 100
+       all:
+         title.ends: "doctor who"
+         year: 1963
+     summary: A collection of the highest rated Doctor Who episodes.
+   Top 100 Family Guy Episodes:
+     collection_order: custom
+     collection_level: episode
+     sort_title: Z_08
+     plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 100
+       all:
+         title.ends: "family guy"
+     summary: A collection of the highest rated Family Guy episodes.
+   Top 100 Forensic Files Episodes:
+     collection_order: custom
+     collection_level: episode
+     sort_title: Z_09
+     plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 100
+       all:
+         title.ends: "forensic files"
+     summary: A collection of the highest rated Forensic Files episodes.
+   Top 100 Good Eats Episodes:
+     collection_order: custom
+     collection_level: episode
+     sort_title: Z_10
+     plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 100
+       all:
+         title.ends: "good eats"
+     summary: A collection of the highest rated Good Eats episodes.
+   Top 100 How It's Made Episodes:
+     collection_order: custom
+     collection_level: episode
+     sort_title: Z_11
+     plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 100
+       all:
+         title.ends: "how it's made"
+     summary: A collection of the highest rated How It's Made episodes.
+   Top 50 I Love Lucy Episodes:
+     collection_order: custom
+     collection_level: episode
+     sort_title: Z_12
+     plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 50
+       all:
+         title.ends: "i love lucy"
+     summary: A collection of the highest rated I Love Lucy episodes.
+   Top 100 Law & Order Episodes:
+     collection_order: custom
+     collection_level: episode
+     sort_title: Z_13
+     plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 100
+       all:
+         title.ends: "law & order"
+     summary: A collection of the highest rated Law & Order episodes.
+   Top 100 Modern Marvels Episodes:
+     collection_order: custom
+     collection_level: episode
+     sort_title: Z_14
+     plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 100
+       all:
+         title.ends: "modern marvels"
+     summary: A collection of the highest rated Modern Marvels episodes.
+   Top 50 Mystery Science Theater 3000 Episodes:
+     collection_order: custom
+     collection_level: episode
+     sort_title: Z_15
+     plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 50
+       all:
+         title.ends: "mystery science theater 3000"
+     summary: A collection of the highest rated Mystery Science Theater 3000 episodes.
+   Top 100 MythBusters Episodes:
+     collection_order: custom
+     collection_level: episode
+     sort_title: Z_16
+     plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 100
+       all:
+         title.ends: "mythbusters"
+     summary: A collection of the highest rated MythBusters episodes.
+   Top 100 South Park Episodes:
+     collection_order: custom
+     collection_level: episode
+     sort_title: Z_17
+     plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 100
+       all:
+         title.ends: "south park"
+     summary: A collection of the highest rated South Park episodes.
+   Top 25 Tales from the Crypt Episodes:
+     collection_order: custom
+     collection_level: episode
+     sort_title: Z_18
+     plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 25
+       all:
+         title.ends: "from the crypt"
+     summary: A collection of the highest rated Tales from the Crypt episodes.
+   Top 100 The Joy of Painting Episodes:
+     collection_order: custom
+     collection_level: episode
+     sort_title: Z_19
+     plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 100
+       all:
+         title.ends: "the joy of painting"
+     summary: A collection of the highest rated The Joy of Painting episodes.
+   Top 100 The Simpsons Episodes:
+     collection_order: custom
+     collection_level: episode
+     sort_title: Z_20
+     plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 100
+       all:
+         title.ends: "the simpsons"
+     summary: A collection of the highest rated The Simpsons episodes.
+   Top 100 Twilight Zone Episodes:
+     collection_order: custom
+     collection_level: episode
+     sort_title: Z_21
+     plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 100
+       all:
+         title.ends: "twilight zone"
+         year: 1959
+     summary: A collection of the highest rated Twilight Zone episodes.
+   Top 100 The X-Files Episodes:
+     collection_order: custom
+     collection_level: episode
+     sort_title: Z_22
+     plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 100
+       all:
+         title.ends: "the x-files"
+     summary: A collection of the highest rated The X-Files episodes.     

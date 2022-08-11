@@ -1,0 +1,18 @@
+#######################################################
+#                   Pilots                            #
+#                TV Collection                        #
+#######################################################
+
+collections:
+  Pilots:
+    collection_level: episode
+    plex_pilots: true
+    sort_title: "800"
+    filters:
+      plays: 0
+    plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 100
+       all:
+         audio_language: en

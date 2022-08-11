@@ -1,0 +1,121 @@
+#######################################################
+#              Documentary Genres                     #
+#                TV Collections                       #
+#######################################################
+
+templates:
+  Collection:
+    optional:
+      - poster
+    url_poster: <<poster>>
+    sync_mode: sync
+    collection_order: release.asc
+    sort_title: 600_<<collection_name>>
+
+#######################################################
+#######################################################
+
+collections:
+  America:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/WhoDat104/Genres/main/America.jpg}
+    imdb_list: https://www.imdb.com/list/ls567617875/
+  Animals: 
+    template: {name: Collection, poster: https://raw.githubusercontent.com/WhoDat104/Genres/main/Animals.jpg}
+    imdb_list: https://www.imdb.com/list/ls567611777/
+    tvdb_show: 231181, 302286, 365318, 397323, 380404, 414372
+  Apocalypse:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/WhoDat104/Genres/main/Apocalypse.jpg}
+    imdb_list: https://www.imdb.com/list/ls567611328/
+    tvdb_show: 101421, 279117
+  The Arts:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/WhoDat104/Genres/main/The%20Arts.jpg}
+    imdb_list: https://www.imdb.com/list/ls567611610/
+    tvdb_show: 362158, 353954, 418474, 266866
+    sort_title: "600_Arts"
+  Building:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/WhoDat104/Genres/main/Building.jpg}
+    imdb_list: https://www.imdb.com/list/ls567611261/
+    tvdb_show: 400435, 280472
+  Conspiracy:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/WhoDat104/Genres/main/Conspiracy.jpg}
+    imdb_list: https://www.imdb.com/list/ls567611457/
+    tvdb_show: 37043, 111931, 287495 
+  Dinosaurs:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/WhoDat104/Genres/main/Dinosaurs.jpg}
+    imdb_list: https://www.imdb.com/list/ls567611901/
+  Engineering:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/WhoDat104/Genres/main/Engineering.jpg}
+    imdb_list: https://www.imdb.com/list/ls567611972/
+    tvdb_show: 122401, 280472, 282106, 370754, 369458, 400435, 410587, 399511
+  Engineering Disasters:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/WhoDat104/Genres/main/Engineering%20Disasters.jpg}
+    imdb_list: https://www.imdb.com/list/ls567611821/
+    tvdb_show: 410587, 375980, 370754, 369458, 345959      
+  Fringe:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/WhoDat104/Genres/main/Fringe.jpg}
+    imdb_list: https://www.imdb.com/list/ls567613015/
+    tvdb_show: 417262, 290249, 370439, 336514, 413801, 111931, 311398
+  History:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/History.jpg}
+    imdb_list: https://www.imdb.com/list/ls567613721/
+    tvdb_show: 84970, 119811, 290249, 136411, 311398, 287495, 362158, 356885, 370439, 410168, 400435, 418474, 413801, 421687
+#    smart_filter:
+#        sort_by: year.asc
+#        all:
+#          genre: documentary  
+#            any:
+#              genre: biography, war       
+  Human Body:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/WhoDat104/Genres/main/Human%20Body.jpg}
+    imdb_list: https://www.imdb.com/list/ls567613933/
+    tvdb_show: 370439, 324346
+  Manufacturing:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/WhoDat104/Genres/main/Manufacturing.jpg}
+    imdb_list: https://www.imdb.com/list/ls567613987/
+    tvdb_show: 421687, 399511
+  Nature:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/WhoDat104/Genres/main/Nature.jpg}
+    imdb_list: 
+        - https://www.imdb.com/list/ls567613846/        #All other Nature List
+        - https://www.imdb.com/list/ls567611777/        #Animals List
+        - https://www.imdb.com/list/ls567611901/        #Dinosaur list
+        - https://www.imdb.com/list/ls567616526/        #Plants List
+        - https://www.imdb.com/list/ls567616754/        #Space List
+        - https://www.imdb.com/list/ls567637089/        #Weather List
+    tvdb_show: 268119, 388660, 356885, 333247, 387478, 136411, 231181, 302286, 365318, 397323, 380404, 414372, 377071, 390520, 269320, 255951, 286699, 370598, 80865, 419048
+  Paranormal:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/WhoDat104/Genres/main/Paranormal.jpg}
+    imdb_list: https://www.imdb.com/list/ls567616578/
+  Plants:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/WhoDat104/Genres/main/Plants.jpg}
+    imdb_list: https://www.imdb.com/list/ls567616526/
+  Space:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/WhoDat104/Genres/main/Space.jpg}
+    imdb_list: https://www.imdb.com/list/ls567616754/
+    tvdb_show: 377071
+  Sport:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Sport.jpg}
+    imdb_list: https://www.imdb.com/list/ls567616746/
+    tvdb_show: 362158, 355032, 372055
+  Technology:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/WhoDat104/Genres/main/Technology.jpg}
+    imdb_list: https://www.imdb.com/list/ls567616111/
+    tvdb_show: 122401, 362158, 282106, 358433, 410168, 417262
+  True Crime:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/WhoDat104/Genres/main/True%20Crime.jpg}
+    imdb_list: https://www.imdb.com/list/ls567635345/
+    tvdb_show: 231181, 287495, 292454
+#    smart_filter:
+#        sort_by: year.asc
+#        all:
+#          genre: crime, documentary            
+  UFOs:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/WhoDat104/Genres/main/UFOs.jpg}
+    imdb_list: https://www.imdb.com/list/ls567637035/
+    tvdb_show: 111931
+  Weather:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/WhoDat104/Genres/main/Weather.jpg}
+    imdb_list: https://www.imdb.com/list/ls567637089/
+    tvdb_show: 390520, 269320, 255951, 286699, 370598, 80865, 419048                                                          
+#######################################################
+ 

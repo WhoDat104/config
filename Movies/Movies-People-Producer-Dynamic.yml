@@ -1,0 +1,43 @@
+###########################
+#         People          #
+###########################
+templates:
+  people_dynamic:
+    default:
+      sort_by: release.asc
+      style: ranier
+      sort_title: "<<collection_name>>"
+    tmdb_person: <<value>>
+    smart_filter:
+      sort_by: <<sort_by>>
+      validate: false
+      any:
+        actor: tmdb
+        director: tmdb
+        producer: tmdb
+        writer: tmdb
+    url_poster: "https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/people/rainier/<<collection_name_encoded>>.jpg"
+    optional:
+      - collection_mode
+      - radarr_add_missing
+      #- sonarr_add_missing
+      - radarr_tag
+      #- sonarr_tag
+      - item_radarr_tag
+      #- item_sonarr_tag
+    radarr_add_missing: <<radarr_add_missing>>
+    #sonarr_add_missing: <<sonarr_add_missing>>
+    radarr_tag: <<radarr_tag>>
+    #sonarr_tag: <<sonarr_tag>>
+    item_radarr_tag: <<item_radarr_tag>>
+    #item_sonarr_tag: <<item_sonarr_tag>>
+    collection_mode: <<collection_mode>>
+
+dynamic_collections:
+  Producers:
+    type: producer
+    template: people_dynamic
+    title_format: <<title>>
+    data:
+      depth: 5
+      limit: 25

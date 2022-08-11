@@ -1,0 +1,14 @@
+#######################################################
+#                   Pilots                            #
+#                TV Collection                        #
+#######################################################
+
+collections:
+  Unwatched:
+    collection_level: episode
+    filters:
+      plays: 0
+    plex_search:
+       type: episodes
+       sort_by: random
+       episode_release.gte: 1/1/2022

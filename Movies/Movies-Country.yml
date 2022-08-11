@@ -1,0 +1,37 @@
+############################
+#         Country          #
+############################
+external_templates:
+  git: PMM/templates
+  template_variables:
+    collection_section: "09"
+
+templates:
+  country_dynamic:
+    default:
+      sort_by: release.desc
+      style: color
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/country/<<style>>/<<key_name_encoded>>.jpg
+    smart_filter:
+      sort_by: <<sort_by>>
+      any:
+        country: <<value>>
+        
+dynamic_collections:
+  Country Color:
+    type: country
+    title_format: <<key_name>>
+    template:
+      - country_dynamic
+      - shared
+    include:
+      - Australia                     # au
+      - Canada                        # ca
+      - China                         # cn
+      - France                        # fr
+      - Germany                       # de
+      - India                         # in
+      - Ireland                       # ie
+      - New Zealand                   # nz
+      - Spain                         # es
+      - United Kingdom                # gb
