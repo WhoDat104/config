@@ -1,9 +1,8 @@
 Movies
 	Best Of
 		- Top 10 Pirated
-		- Top 50 Highest Grossing/Top Grossing Annually
-		- Popular Children's Animations (Hidden)
-		- Movies > 9.0
+		- Top 50 Highest Grossing
+		- Top Grossing Annually
 		- 1001 Movies You Must See Before You Die
 		- Criterion Collection
 	Custom: Combination of lists for niche topics 		#AwesomeAustin
@@ -50,10 +49,10 @@ Movies
 		- New Year's Eve
 		- St. Patrick's Day
 		- Thanksgiving 		
-	People:							#Including Glasti1
-		- 350+ Actors, Directors and Producers
+	People:							
+		- 500+ Actors, Directors and Producers
 	Sequels:
-		- 650+ Movie Franchise Collections
+		- 200+ Movie Franchise Collections
 
 TV Shows
 	Collections:						#SiskoUrso
@@ -67,6 +66,7 @@ TV Shows
 		- Star Trek
 		- Stargatte
 		- Star Wars
+		- The Twilight Zone
 		- The Walking Dead
 		- The X-Files		
 	Kids Collections:					#Saturday Morning Collections by JJJonesJr33
