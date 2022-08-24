@@ -1,0 +1,62 @@
+############################
+#         HOLIDAYS         #
+############################
+collections: 
+  Christmas:
+    imdb_list: https://www.imdb.com/list/ls000096828/
+    plex_search:
+      any: 
+        title.begins: christmas
+        title.ends: christmas
+    #imdb_list: https://www.imdb.com/list/ls567453036/                                      # 900+ consolidation of IMDb lists
+    #trakt_list: https://trakt.tv/users/2borno2b/lists/christmas-movies-extravanganza       # 800+ 
+    collection_order: critic_rating.desc
+    sort_title: "*700"
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/christmas.jpg
+    schedule: yearly(11/30)
+  Easter:
+    imdb_list: https://www.imdb.com/list/ls567453571/
+    collection_order: critic_rating.desc
+    sort_title: "*701"
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/easter.jpg
+    schedule: yearly (04/01)
+  Halloween:
+    imdb_list: 
+      - https://www.imdb.com/list/ls567453106/
+      - https://www.imdb.com/search/title/?genres=horror&keywords=halloween&sort=moviemeter,asc
+      - https://www.imdb.com/search/title/?genres=horror&keywords=haunted-house&sort=moviemeter,asc
+    trakt_list: https://trakt.tv/users/jayinftl/lists/halloween
+    collection_order: critic_rating.desc
+    sort_title: "*702"
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/halloween.jpg
+    schedule: yearly(09/30)
+  Independence Day:
+    imdb_list: https://www.imdb.com/list/ls567453110/
+    collection_order: critic_rating.desc
+    sort_title: "*703"
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/independence.jpg
+    schedule: yearly(6/15)
+  New Year:
+    imdb_list: https://www.imdb.com/list/ls066838460/
+    collection_order: critic_rating.desc
+    sort_title: "*704"
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/years.jpg
+    schedule: yearly(12/15)
+  St. Patrick's Day:
+    imdb_list: https://www.imdb.com/list/ls063934595/
+    collection_order: critic_rating.desc
+    sort_title: "*705"
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/patrick.jpg
+    schedule: yearly(03/01)
+  Thanksgiving:
+    imdb_list: https://www.imdb.com/list/ls567453345/
+    collection_order: critic_rating.desc
+    sort_title: "*706"
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/thanksgiving.jpg
+    schedule: yearly(11/01)
+  Valentine's Day:
+    imdb_list: https://www.imdb.com/list/ls567453394/
+    collection_order: critic_rating.desc
+    sort_title: "*707"
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/valentine.jpg
+    schedule: yearly(01/31)
