@@ -1,0 +1,166 @@
+############################
+#          Topics          #
+############################
+collections: 
+  Biopic:
+    imdb_list: https://www.imdb.com/search/keyword/?ref_=kw_ref_gnr&mode=detail&page=1&title_type=movie%2CtvMovie%2Cvideo&num_votes=1000%2C&sort=num_votes,desc&genres=Biography
+    sort_title: "*401"
+    collection_order: audience_rating.desc
+    schedule: monthly(10)
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Biography.jpg
+  Conspiracy:
+    imdb_list: https://www.imdb.com/list/ls567287307/
+    sort_title: "*403"
+    collection_order: audience_rating.desc
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Topics/Conspiracy.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Extra-Genres/main/Conspiracy.png
+    schedule: monthly(10)
+  Crime:
+    imdb_list: https://www.imdb.com/list/ls567287455/
+    collection_order: audience_rating.desc
+    sort_title: "*405"
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Crime.jpg
+    schedule: monthly(10)
+  Dark Comedy:
+    imdb_list: https://www.imdb.com/list/ls561047438/    
+    collection_order: audience_rating.desc
+    sort_title: "*407"
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Topics/Dark Comedy.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Extra-Genres/main/Dark%20Comedy.png
+    schedule: monthly(10)
+  Dystopian:
+    imdb_list: https://www.imdb.com/list/ls567409312/
+    collection_order: audience_rating.desc
+    sort_title: "*409"
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Topics/Dystopian.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Extra-Genres/main/Dystopian.png
+    schedule: monthly(10)
+  Football:
+    imdb_list: https://www.imdb.com/list/ls567409329/
+    collection_order: audience_rating.desc
+    sort_title: "*410"
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Topics/Football.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Extra-Genres/main/Football.png
+    schedule: monthly(10)
+  Inspirational:
+    imdb_list: https://www.imdb.com/list/ls567409348/
+    trakt_list: https://trakt.tv/users/rizreflects/lists/inspiring
+    collection_order: audience_rating.desc
+    sort_title: "*412"
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Topics/Inspirational.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Extra-Genres/main/Inspirational.png
+    schedule: monthly(10)
+  Mind-Bend:
+    imdb_list: https://www.imdb.com/list/ls567402143/
+    trakt_list: https://trakt.tv/users/lish408/lists/mindfuck
+    mdblist_list: https://mdblist.com/lists/hdlists/mindfuck-movies
+    collection_order: audience_rating.desc
+    sort_title: "*413"
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Mind-Bend.jpg
+    schedule: monthly(10)
+  Musical:
+    imdb_list: https://www.imdb.com/list/ls028390287/
+    sort_title: "*414"
+    collection_order: audience_rating.desc
+    schedule: monthly(10)
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Musical.jpg     
+  Natural Disaster:
+    imdb_list: https://www.imdb.com/list/ls567402383/
+    trakt_list: https://trakt.tv/users/daddyjim/lists/natural-disaster-movies
+    collection_order: audience_rating.desc
+    sort_title: "*415"
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Topics/Natural Disaster.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Extra-Genres/main/Natural%20Disaster.png
+    schedule: monthly(10)
+  Pandemic:
+    imdb_list: https://www.imdb.com/list/ls567402655/
+    trakt_list: https://trakt.tv/users/mraniki/lists/theme-pandemic
+    collection_order: audience_rating.desc
+    sort_title: "*416"
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Topics/Pandemic.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Extra-Genres/main/Pandemic.png
+    schedule: monthly(10)
+  Parody:
+    imdb_list: https://www.imdb.com/list/ls567404864/
+    collection_order: audience_rating.desc
+    sort_title: "*417"
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Topics/Parody.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Extra-Genres/main/Parody.png
+    schedule: monthly(10)
+  Prison:
+    imdb_list: https://www.imdb.com/list/ls567409066/
+    collection_order: audience_rating.desc
+    sort_title: "*418"
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Topics/Prison.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Extra-Genres/main/Prison.png
+    schedule: monthly(10)
+  Seductive:
+    imdb_list: https://www.imdb.com/search/keyword/?keywords=seduction%2Csex-scene&ref_=kw_ref_key&mode=detail&page=1&title_type=movie%2CtvMovie%2Cvideo&num_votes=100%2C&sort=user_rating,desc
+    collection_order: audience_rating.desc
+    sort_title: "*419"
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Topics/Seductive.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Extra-Genres/main/Seductive.png
+    schedule: monthly(10)
+  Space:
+    imdb_list: https://www.imdb.com/list/ls567409789/
+    collection_order: audience_rating.desc
+    sort_title: "*420"
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Topics/Space.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Extra-Genres/main/Space.png
+    schedule: monthly(10)
+  Spy:
+    imdb_list: https://www.imdb.com/list/ls567409179/
+    collection_order: audience_rating.desc
+    sort_title: "*422"
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Topics/Spy.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Extra-Genres/main/Spy.png
+    schedule: monthly(10)
+  Stand-up Comedy:
+    imdb_list: https://www.imdb.com/list/ls567409881/
+    collection_order: release.desc
+    sort_title: "*423"
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Stand-Up%20Comedy.jpg
+    schedule: monthly(10)
+  Sword & Scorcery: 
+    imdb_list: https://www.imdb.com/list/ls567408598/
+    collection_order: audience_rating.desc
+    sort_title: "*424"
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Sword%20&%20Sorcery.jpg
+    schedule: monthly(10)
+  Time Travel:
+    imdb_list: https://www.imdb.com/list/ls567408798/
+    sync_mode: sync
+    collection_mode: default
+    collection_order: audience_rating.desc
+    sort_title: "*425"
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Topics/Time Travel.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Extra-Genres/main/Time%20Travel.png
+    schedule: monthly(10)
+  True Story:
+    imdb_list: https://www.imdb.com/list/ls567408128/
+    collection_order: audience_rating.desc
+    sort_title: "*427"
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Topics/True Story.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Extra-Genres/main/True%20Story.png
+    schedule: monthly(10)
+  Unexpectedly Amazing:
+    imdb_list: https://www.imdb.com/list/ls567408147/
+    collection_order: audience_rating.desc
+    sort_title: "*428"
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Topics/Unexpectedly Amazing.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Extra-Genres/main/Unexpectedly%20Amazing.png
+    schedule: monthly(10)
+  Video Game:
+    imdb_list: https://www.imdb.com/list/ls567408339/
+    collection_order: audience_rating.desc
+    sort_title: "*429"
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Topics/Video Game.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Extra-Genres/main/Video%20Game.png
+    schedule: monthly(10)
+  Witch:
+    imdb_list: https://www.imdb.com/list/ls567408343/
+    collection_order: audience_rating.desc
+    sort_title: "*431"
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Topics/Witch.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Extra-Genres/main/Witch.png
+    schedule: monthly(10)
