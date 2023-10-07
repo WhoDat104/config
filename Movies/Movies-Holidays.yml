@@ -1,0 +1,98 @@
+############################
+#         HOLIDAYS         #
+############################
+collections: 
+  Christmas:
+    imdb_list: https://www.imdb.com/list/ls000096828/
+    plex_search:
+      any: 
+        title.begins: christmas
+        title.ends: christmas
+    #imdb_list: https://www.imdb.com/list/ls567453036/                                      # 900+ consolidation of IMDb lists
+    #trakt_list: https://trakt.tv/users/2borno2b/lists/christmas-movies-extravanganza       # 800+ 
+    collection_order: critic_rating.desc
+    sort_title: "!016_1032"
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Holidays/main/Christmas.jpg
+    schedule: yearly(11/30)
+  Easter:
+    imdb_list: 
+      - https://www.imdb.com/list/ls567453571/
+      - https://www.imdb.com/list/ls062665509/
+      - https://www.imdb.com/list/ls051733651/
+    collection_order: critic_rating.desc
+    sort_title: "!016_1033"
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Holidays/main/Easter.jpg
+    schedule: yearly(04/01)
+  Father's Day:
+    imdb_list: https://www.imdb.com/list/ls020471057/
+    collection_order: critic_rating.desc
+    sort_title: "!016_1034"
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Holidays/main/Fathers%20Day.jpg
+    schedule: yearly(06/01)
+  Halloween:
+    imdb_list: 
+      - https://www.imdb.com/list/ls567453106/
+      - https://www.imdb.com/search/title/?genres=horror&keywords=halloween&sort=moviemeter,asc
+      - https://www.imdb.com/search/title/?genres=horror&keywords=haunted-house&sort=moviemeter,asc
+    collection_order: critic_rating.desc
+    sort_title: "!016_1035"
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Holidays/main/Halloween.jpg
+    schedule: yearly(09/30)
+  Independence Day:
+    imdb_list: 
+      - https://www.imdb.com/list/ls567453110/
+      - https://www.imdb.com/list/ls068664510/
+      - https://www.imdb.com/list/ls080925875/
+    collection_order: critic_rating.desc
+    sort_title: "!016_1036"
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Holidays/main/Independence%20Day.jpg
+    schedule: yearly(6/15)
+  Labor Day:
+    imdb_list: https://www.imdb.com/list/ls002014923/
+    collection_order: critic_rating.desc
+    sort_title: "!016_1037"
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Holidays/main/Labor%20Day.jpg
+    schedule: yearly(8/15)
+  Memorial Day:
+    imdb_list: https://www.imdb.com/list/ls561621160/
+    collection_order: critic_rating.desc
+    sort_title: "!016_1038"
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Holidays/main/Memorial%20Day.jpg
+    schedule: yearly(5/1)
+  Mother's Day:
+    imdb_list: https://www.imdb.com/list/ls072551197/
+    collection_order: critic_rating.desc
+    sort_title: "!016_1039"
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Holidays/main/Mothers%20Day.jpg
+    schedule: yearly(4/15)        
+  New Year's:
+    imdb_list: https://www.imdb.com/list/ls066838460/
+    collection_order: critic_rating.desc
+    sort_title: "!016_1040"
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Holidays/main/New%20Years.jpg
+    schedule: yearly(12/15)
+  St. Patrick's Day:
+    imdb_list: https://www.imdb.com/list/ls063934595/
+    collection_order: critic_rating.desc
+    sort_title: "!016_1041"
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Holidays/main/St.%20Patricks%20Day.jpg
+    schedule: yearly(03/01)
+  Thanksgiving:
+    imdb_list: 
+      - https://www.imdb.com/list/ls567453345/
+      - https://www.imdb.com/list/ls000835734/
+      - https://www.imdb.com/list/ls091597850/
+    collection_order: critic_rating.desc
+    sort_title: "!016_1042"
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Holidays/main/Thanksgiving.jpg
+    schedule: yearly(11/01)
+  Valentine's:
+    imdb_list: 
+      - https://www.imdb.com/list/ls567453394/
+      - https://www.imdb.com/list/ls000094398/
+      - https://www.imdb.com/list/ls057783436/
+      - https://www.imdb.com/list/ls064427905/
+    collection_order: critic_rating.desc
+    sort_title: "!016_1043"
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Holidays/main/Valentines.jpg
+    schedule: yearly(01/31)

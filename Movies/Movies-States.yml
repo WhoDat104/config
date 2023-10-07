@@ -1,0 +1,20 @@
+############################
+#         LOCATION         #
+############################
+collections: 
+  Colorado:
+    imdb_list: 
+      - https://www.imdb.com/list/ls022933402/
+      - https://www.imdb.com/list/ls055585839/
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Colorado.jpg
+    collection_order: critic_rating.desc
+    sort_title: "!015_Colorado"
+    summary: Films set in Colorado.
+    schedule: weekly(friday)
+  Louisiana:
+    imdb_list: https://www.imdb.com/list/ls004895720/
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Louisiana.jpg
+    collection_order: critic_rating.desc
+    sort_title: "!015_Louisiana"
+    summary: Films set in Louisiana.
+    schedule: weekly(friday)

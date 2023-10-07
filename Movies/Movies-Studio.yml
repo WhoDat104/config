@@ -1,0 +1,112 @@
+##############################################################################
+#                             Studio Collections                             #
+#                 Created by Yozora, Bullmoose20, & Sohjiro                  #
+#          EDITING THIS FILE MAY CAUSE PULLING NEW UPDATES TO FAIL           #
+#        https://metamanager.wiki/en/latest/defaults/both/studio.html        #
+##############################################################################
+
+external_templates:
+  pmm: templates
+  template_variables:
+    collection_section: "070"
+
+dynamic_collections:
+  Studio:
+    type: studio
+    title_format: <<key_name>>
+    template:
+      - smart_filter
+      - shared
+    template_variables:
+      search_term:
+        default: studio.is
+      search_term2:
+        20th Century Studios: studio
+      search_value2:
+        20th Century Studios: 20th Century
+      image:
+        default: studio/<<key_encoded>>
+      translation_key:
+        default: studio
+      dynamic:
+        default: true
+    include:
+      - 20th Century Studios
+      - Amazon Studios
+      - Amblin Entertainment
+      - Blue Sky Studios
+      - Blumhouse Productions
+      - Chernin Entertainment
+      - Columbia Pictures
+      - Constantin Film
+      - DreamWorks Studios
+      - Grindstone Entertainment Group
+      - Happy Madison Productions
+      - Illumination Entertainment
+      - Ingenious Media
+      - Legendary Pictures
+      - Lionsgate
+      - Lucasfilm Ltd
+      - Malevolent Films
+      - Marvel Studios
+      - Metro-Goldwyn-Mayer
+      - Millennium Films
+      - Miramax
+      - New Line Cinema
+      - Original Film
+      - Orion Pictures
+      - Paramount Pictures
+      - Pixar
+      - PlanB Entertainment
+      - Sony Pictures
+      - Studio Ghibli
+      - Summit Entertainment
+      - Universal Pictures
+      - Village Roadshow Pictures
+      - Walt Disney Pictures
+      - Warner Bros. Pictures
+    addons:
+      20th Century Studios:
+        - 20th Century
+        - 20th Century Animation
+        - 20th Century Fox
+      Amazon Studios:
+        - Amazon
+      Blue Sky Studios:
+        - Blue Sky Films
+      Columbia Pictures:
+        - Columbia TriStar
+        - TriStar
+      DreamWorks Studios:
+        - DreamWorks
+        - DreamWorks Animation
+      Illumination Entertainment:
+        - Illumination Films
+      Lucasfilm Ltd:
+        - Lucasfilm
+      Marvel Studios:
+        - Marvel Animation
+        - Marvel Enterprises
+        - Marvel Entertainment
+        - Marvel
+      Metro-Goldwyn-Mayer:
+        - MGM
+      New Line Cinema:
+        - New Line
+      Paramount Pictures:
+        - Paramount
+        - Paramount Animation
+      Pixar:
+        - Pixar Animation Studios
+      Sony Pictures:
+        - Sony
+        - Sony Pictures Animation
+      Universal Pictures:
+        - Universal
+        - Universal Animation Studios
+      Walt Disney Pictures:
+        - Disney
+        - Walt Disney Animation Studios
+      Warner Bros. Pictures:
+        - Warner
+        - Warner Animation Group

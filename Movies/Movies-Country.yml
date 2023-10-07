@@ -1,0 +1,44 @@
+##############################################################################
+#                            Country Collections                             #
+#                 Created by Yozora, Bullmoose20, & Sohjiro                  #
+#                         Artwork Credit to Duhniel                          #
+#          EDITING THIS FILE MAY CAUSE PULLING NEW UPDATES TO FAIL           #
+#       https://metamanager.wiki/en/latest/defaults/movie/country.html       #
+##############################################################################
+
+external_templates:
+  pmm: templates
+  template_variables:
+    collection_section: "080"
+
+
+dynamic_collections:
+  Country:
+    type: country
+    title_format: <<key_name>>
+    template:
+      - smart_filter
+      - shared
+    template_variables:
+      search_term:
+        default: country
+      image:
+        default: country/<<style>>/<<original_key_name_encoded>>
+      style:
+        default: color
+      translation_key:
+        default: country
+        other: country_other
+      dynamic:
+        default: true
+    include:
+      - Australia                     # au
+      - Canada                        # ca
+      - China                         # cn
+      - France                        # fr
+      - Germany                       # de
+      - India                         # in
+      - Ireland                       # ie
+      - New Zealand                   # nz
+      - Spain                         # es
+      - United Kingdom                # gb

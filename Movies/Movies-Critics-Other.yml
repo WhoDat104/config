@@ -1,0 +1,121 @@
+##############################################################################
+#                          Other Awards Collections                          #
+#                 Created by Yozora, Bullmoose20, & Sohjiro                  #
+#                 Credit to maxwelldeux for the Trakt Lists                  #
+#          EDITING THIS FILE MAY CAUSE PULLING NEW UPDATES TO FAIL           #
+#        https://metamanager.wiki/en/latest/defaults/award/other.html        #
+##############################################################################
+
+external_templates:
+  pmm: templates
+  template_variables:
+    collection_section: 130
+
+templates:
+ Rotten Tomatoes:
+    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-<<key>>
+    sync_mode: sync
+    collection_mode: default
+    collection_order: custom
+    sort_title: "!130_Rotten Tomatoes Best of <<key>>"
+    schedule: yearly(01/30)
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Critics/Rotten Tomatoes/Rotten Tomatoes Best of <<key>>.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Rotten-Tomatotes/main/Rotten%20Tomatoes%20Best%20of%20<<key>>.png
+
+collections:
+  "100 Years... 100 Movies":
+    imdb_list: https://www.imdb.com/list/ls027841309/
+    collection_order: custom
+    sort_title: "!130_AFI 1!"
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Critics/100 Years... 100 Movies.jpg
+    schedule: yearly(01/30)
+  Berlinale Golden Bears:
+    variables:
+      key: berlinale
+    template:
+      - name: shared
+        allowed_libraries: movie
+        image: award/berlinale/winner
+        translation_key: berlinale_best
+      - name: arr
+      - name: custom
+    trakt_list: https://trakt.tv/users/maxwelldeux/lists/berlin-international-film-festival-golden-bears
+  César Best Film Winners:
+    variables:
+      key: cesar
+    template:
+      - name: shared
+        allowed_libraries: movie
+        image: award/cesar/winner
+        translation_key: cesar_best
+      - name: arr
+      - name: custom
+    trakt_list: https://trakt.tv/users/maxwelldeux/lists/cesar-award-best-french-film
+  Criterion Collection:
+    imdb_list: https://www.imdb.com/list/ls063225919/
+    trakt_list: https://trakt.tv/users/radiostarred/lists/the-criterion-collection?sort=rank,asc
+    collection_order: critic_rating.desc
+    sort_title: "!130_Criterion Collection !1"
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Critics/Criterion Collection.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Extra-Genres/main/Criterion%20Collection.png
+    schedule: monthly(10)
+  Razzies Golden Raspberry Winners:
+    variables:
+      key: razzie
+    template:
+      - name: shared
+        allowed_libraries: movie
+        image: award/razzies/winner
+        translation_key: razzie_worst
+      - name: arr
+      - name: custom
+    trakt_list: https://trakt.tv/users/hdlists/lists/razzie-awards-worst-picture-winners
+  Rotten Tomatoes Best All-Time:
+    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-top-100-movies-of-all-time
+    sync_mode: sync
+    collection_mode: default
+    collection_order: custom
+    sort_title: "!130_Rotten !1"
+    schedule: monthly(10)
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Critics/Rotten Tomatoes/Rotten Tomatoes Best All-Time.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Rotten-Tomatotes/main/Rotten%20Tomatoes%20Best%20All-Time.png
+  Rotten Tomatoes Best Horror:
+    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-horror-movies-of-all-time
+    sync_mode: sync
+    collection_mode: default
+    collection_order: custom
+    sort_title: "!130_Rotten !2"
+    schedule: monthly(10)
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Critics/Rotten Tomatoes/Rotten Tomatoes Best Horror.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Rotten-Tomatotes/main/Rotten%20Tomatoes%20Best%20Horror.png
+  Rotten Tomatoes Best Rom Com:
+    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-the-200-best-romantic-comedies-of-all-time
+    sync_mode: sync
+    collection_mode: default
+    collection_order: custom
+    sort_title: "!130_Rotten !3"
+    schedule: monthly(10)
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Critics/Rotten Tomatoes/Rotten Tomatoes Best Rom Com.jpg
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Rotten-Tomatotes/main/Rotten%20Tomatoes%20Best%20Rom%20Com.png
+  Venice Golden Lions:
+    variables:
+      key: venice
+    template:
+      - name: shared
+        allowed_libraries: movie
+        image: award/venice/winner
+        translation_key: venice_best
+      - name: arr
+      - name: custom
+    trakt_list: https://trakt.tv/users/maxwelldeux/lists/venice-film-festival-golden-lion
+    
+dynamic_collections:
+  Rotten Tomatoes Best of:
+    type: number
+    sync: true
+    data:
+      starting: current_year-2
+      ending: current_year-1
+    title_format: Rotten Tomatoes Best of <<key_name>>
+    template:
+      - Rotten Tomatoes
