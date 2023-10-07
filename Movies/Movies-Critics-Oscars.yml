@@ -33,8 +33,8 @@ collections:
     collection_mode: default
     collection_order: release.asc
     sort_title: "!130_Oscars !3"
-    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Critics/Oscars/Oscar Best Actor.jpg
-    #url_poster: https://raw.githubusercontent.com/WhoDat104/Oscars-Categories/main/Oscar%20Best%20Actor.png
+    #file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Critics/Oscars/Oscar Best Actor.jpg
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Oscars-Categories/main/Oscar%20Best%20Actor.jpg
     schedule: yearly(03/01)
   Best Actress:
     imdb_list: https://www.imdb.com/list/ls098092908/
@@ -42,8 +42,8 @@ collections:
     collection_mode: default
     collection_order: release.asc
     sort_title: "!130_Oscars !4"
-    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Critics/Oscars/Oscar Best Actress.jpg
-    #url_poster: https://raw.githubusercontent.com/WhoDat104/Oscars-Categories/main/Oscar%20Best%20Actress.png
+    #file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Critics/Oscars/Oscar Best Actress.jpg
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Oscars-Categories/main/Oscar%20Best%20Actress.jpg
     schedule: yearly(03/01)
   Best Adapted Screenplay:
     imdb_list: https://www.imdb.com/list/ls098087964/
@@ -51,26 +51,26 @@ collections:
     collection_mode: default
     collection_order: release.asc
     sort_title: "!130_Oscars !5"
-    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Critics/Oscars/Oscar Best Adapted Screenplay.jpg
-    #url_poster: https://raw.githubusercontent.com/WhoDat104/Oscars-Categories/main/Oscar%20Best%20Adapted%20Screenplay.png
+    #file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Critics/Oscars/Oscar Best Adapted Screenplay.jpg
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Oscars-Categories/main/Oscar%20Best%20Adapted%20Screenplay.jpg
     schedule: yearly(03/01)
   Best Animated Feature Film:
-    imdb_list: https://www.imdb.com/list/ls560364561/
+    imdb_list: https://www.imdb.com/list/ls098094655/
     sync_mode: sync
     collection_mode: default
     collection_order: release.asc
     sort_title: "!130_Oscars !6"
-    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Critics/Oscars/Oscar Best Animated Feature Film.jpg
-    #url_poster: https://raw.githubusercontent.com/WhoDat104/Oscars-Categories/main/Oscar%20Best%20Animated%20Feature%20Film.png
+    #file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Critics/Oscars/Oscar Best Animated Feature Film.jpg
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Oscars-Categories/main/Oscar%20Best%20Animated%20Feature%20Film.jpg
     schedule: yearly(03/01)
   Best Cinematography:
-    imdb_list: https://www.imdb.com/list/ls560369098/
+    imdb_list: https://www.imdb.com/list/ls098084055/
     sync_mode: sync
     collection_mode: default
     collection_order: release.asc
     sort_title: "!130_Oscars !7"
     file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Critics/Oscars/Oscar Best Cinematography.jpg
-    #url_poster: https://raw.githubusercontent.com/WhoDat104/Oscars-Categories/main/Oscar%20Best%20Cinematography.png
+    #url_poster: https://raw.githubusercontent.com/WhoDat104/Oscars-Categories/main/Oscar%20Best%20Cinematography.jpg
     schedule: yearly(03/01)
   Best Documentary:
     imdb_list: https://www.imdb.com/list/ls098500456/
@@ -78,8 +78,8 @@ collections:
     collection_mode: default
     collection_order: release.asc
     sort_title: "!130_Oscars !8"
-    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Critics/Oscars/Oscar Best Documentary.jpg
-    #url_poster: https://raw.githubusercontent.com/WhoDat104/Oscars-Categories/main/Oscar%20Best%20Documentary.png
+    #file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Critics/Oscars/Oscar Best Documentary.jpg
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Oscars-Categories/main/Oscar%20Best%20Documentary.jpg
     schedule: yearly(03/01)
   Best Film Editing:
     imdb_list: https://www.imdb.com/list/ls560364494/
@@ -87,8 +87,8 @@ collections:
     collection_mode: default
     collection_order: release.asc
     sort_title: "!130_Oscars !9"
-    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Critics/Oscars/Oscar Best Film Editing.jpg
-    #url_poster: https://raw.githubusercontent.com/WhoDat104/Oscars-Categories/main/Oscar%20Best%20Film%20Editing.png
+    #file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Critics/Oscars/Oscar Best Film Editing.jpg
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Oscars-Categories/main/Oscar%20Best%20Film%20Editing.jpg
     schedule: yearly(03/01)
   Best Original Motion Picture:
     imdb_list: https://www.imdb.com/list/ls098506998/
@@ -96,8 +96,8 @@ collections:
     collection_mode: default
     collection_order: release.asc
     sort_title: "!130_Oscars !9a"
-    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Critics/Oscars/Oscar Best Original Motion Picture.jpg
-    #url_poster: https://raw.githubusercontent.com/WhoDat104/Oscars-Categories/main/Oscar%20Best%20Original%20Motion%20Picture.png
+    #file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Critics/Oscars/Oscar Best Original Motion Picture.jpg
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Oscars-Categories/main/Oscar%20Best%20Original%20Motion%20Picture.jpg
     schedule: yearly(03/01)
   Best Original Screenplay:
     imdb_list: https://www.imdb.com/list/ls098505320/
@@ -105,8 +105,8 @@ collections:
     collection_mode: default
     collection_order: release.asc
     sort_title: "!130_Oscars !9b"
-    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Critics/Oscars/Oscar Best Original Screenplay.jpg
-    #url_poster: https://raw.githubusercontent.com/WhoDat104/Oscars-Categories/main/Oscar%20Best%20Original%20Screenplay.png
+    #file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Critics/Oscars/Oscar Best Original Screenplay.jpg
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Oscars-Categories/main/Oscar%20Best%20Original%20Screenplay.jpg
     schedule: yearly(03/01)
   Best Sound:
     imdb_list: https://www.imdb.com/list/ls560369669/
@@ -114,8 +114,8 @@ collections:
     collection_mode: default
     collection_order: release.asc
     sort_title: "!130_Oscars !9c"
-    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Critics/Oscars/Oscar Best Sound.jpg
-    #url_poster: https://raw.githubusercontent.com/WhoDat104/Oscars-Categories/main/Oscar%20Best%20Sound.png
+    #file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Critics/Oscars/Oscar Best Sound.jpg
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Oscars-Categories/main/Oscar%20Best%20Sound.jpg
     schedule: yearly(03/01)
   Best Supporting Actor:
     imdb_list: https://www.imdb.com/list/ls098559088/
@@ -123,8 +123,8 @@ collections:
     collection_mode: default
     collection_order: release.asc
     sort_title: "!130_Oscars !9d"
-    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Critics/Oscars/Oscar Best Supporting Actor.jpg
-    #url_poster: https://raw.githubusercontent.com/WhoDat104/Oscars-Categories/main/Oscar%20Best%20Supporting%20Actor.png
+    #file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Critics/Oscars/Oscar Best Supporting Actor.jpg
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Oscars-Categories/main/Oscar%20Best%20Supporting%20Actor.jpg
     schedule: yearly(03/01)
   Best Supporting Actress:
     imdb_list: https://www.imdb.com/list/ls098559671/
@@ -132,8 +132,8 @@ collections:
     collection_mode: default
     collection_order: release.asc
     sort_title: "!130_Oscars !9e"
-    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Critics/Oscars/Oscar Best Supporting Actress.jpg
-    #url_poster: https://raw.githubusercontent.com/WhoDat104/Oscars-Categories/main/Oscar%20Best%20Supporting%20Actress.png
+    #file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Critics/Oscars/Oscar Best Supporting Actress.jpg
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Oscars-Categories/main/Oscar%20Best%20Supporting%20Actress.jpg
     schedule: yearly(03/01)
   Best Visual Effects:
     imdb_list: https://www.imdb.com/list/ls560368042/
@@ -141,8 +141,8 @@ collections:
     collection_mode: default
     collection_order: release.asc
     sort_title: "!130_Oscars !9f"
-    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Critics/Oscars/Oscar Best Visual Effects.jpg
-    #url_poster: https://raw.githubusercontent.com/WhoDat104/Oscars-Categories/main/Oscar%20Best%20Visual%20Effects.png
+    #file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Critics/Oscars/Oscar Best Visual Effects.jpg
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Oscars-Categories/main/Oscar%20Best%20Visual%20Effects.jpg
     schedule: yearly(03/01)
 dynamic_collections:
   Oscars Winners Awards:
