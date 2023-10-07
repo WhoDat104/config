@@ -1,0 +1,140 @@
+############################
+#          Chart           #
+############################
+external_templates:
+  git: PMM/templates
+  template_variables:
+    collection_section: "010"
+
+templates:
+  air:
+    default:
+      limit_air: 100
+    tmdb_on_the_air: <<limit_air>>
+    summary: A collection of shows that are still activaly airing episodes
+  airing:
+    default:
+      limit_airing: 100
+    tmdb_airing_today: <<limit_airing>>
+    summary: A collection of shows with episodes airing today
+  episodes:
+    default:
+      in_the_last_episodes: 7
+    summary: A collection of newly-released episodes
+    smart_filter:
+      type: episodes
+      all:
+        episode_air_date: <<in_the_last_episodes>>
+      sort_by: release.desc
+  imdb:
+    default:
+      summary_<<key>>: "List of <<collection_name>> <<library_type>>s"  
+    imdb_chart: <<chart>>_<<library_type>>s
+    summary: <<summary_<<key>>>>
+  popular:
+    default:
+      limit_popular: 100
+    tmdb_popular: <<limit_popular>>
+    summary: A collection of the most watched <<library_type>>s according to TMDb.
+  released:
+    default:
+      in_the_last_released: 90
+    summary: A collection of newly-released <<library_type>>
+    smart_filter:
+      all:
+        release: <<in_the_last_released>>
+      sort_by: release.desc
+  top:
+    default:
+      limit_top: 100
+    tmdb_top_rated: <<limit_top>>
+    summary: A collection of the top rated <<library_type>>s according to TMDb.
+  trending:
+    default:
+      limit_trending: 100
+    tmdb_trending_weekly: <<limit_trending>>
+    summary: A collection of <<library_type>>s trending on TMDb
+      
+collections:
+  IMDb Popular:
+    variables:
+      key: popular
+    template:
+      - name: imdb
+        chart: popular
+      - name: shared
+      - name: arr
+      - name: custom
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/chart/IMDb%20Popular.jpg
+  IMDb Top 250:
+    variables:
+      key: top
+    template:
+      - name: imdb
+        chart: top
+      - name: shared
+      - name: arr
+      - name: custom
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/chart/IMDb%20Top%20250.jpg
+  New Episodes:
+    variables:
+      key: episodes
+    template:
+      - name: episodes
+      - name: shared
+        allowed_libraries: show
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/chart/New%20Episodes.jpg
+  Newly Released:
+    variables:
+      key: released
+    template:
+      - name: released
+      - name: shared
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/chart/Newly%20Released.jpg
+  TMDb Airing Today:
+    variables:
+      key: airing
+    template:
+      - name: airing
+      - name: shared
+        allowed_libraries: show
+      - name: arr
+      - name: custom
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/chart/TMDb%20Airing%20Today.jpg
+  TMDb On The Air:
+    variables:
+      key: air
+    template:
+      - name: air
+      - name: shared
+        allowed_libraries: show
+      - name: arr
+      - name: custom
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/chart/TMDb%20On%20The%20Air.jpg
+  TMDb Popular:
+    variables:
+      key: popular
+    template:
+      - name: popular
+      - name: shared
+      - name: arr
+      - name: custom
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/chart/TMDb%20Popular.jpg
+  TMDb Top Rated:
+    variables:
+      key: top
+    template:
+      - name: top
+      - name: shared
+      - name: arr
+      - name: custom
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/chart/TMDb%20Top%20Rated.jpg
+  TMDb Trending:
+    variables:
+      key: trending
+    template:
+      - name: trending
+      - name: shared
+      - name: arr
+      - name: custom
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/chart/TMDb%20Trending.jpg

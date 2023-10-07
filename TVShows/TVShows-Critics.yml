@@ -1,0 +1,66 @@
+############################
+#         Critics          #
+############################
+
+
+external_templates:
+  pmm: templates
+  template_variables:
+    collection_section: 130
+    radarr_add_missing: false
+
+collections:
+  Emmy Winning Dramas:
+    template: {name: Collection, show: "81189, 121361, 247897, 305574, 321239, 338186", poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/emmys/winner.jpg}
+    imdb_list: https://www.imdb.com/list/ls008640782/
+    sort_title: "!130_Emmys Best Drama"
+    
+dynamic_collections:
+  Emmy Awards:
+    type: number
+    sync: true
+    data:
+      starting: current_year-5
+      ending: current_year
+    title_format: Emmys <<key_name>>
+    template:
+      - use_year_collections
+      - imdb
+      - shared
+      - arr
+      - custom
+    template_variables:
+      imdb_list:
+        default: https://www.imdb.com/search/title/?release_date=<<key-1>>-05-31,<<key>>-06-01&groups=emmy_winner&sort=<<imdb_sort>>
+      imdb_sort:
+        default: moviemeter,asc
+      image:
+        default: award/emmys/winner/<<key>>
+      translation_key:
+        default: emmy_year
+      dynamic:
+        default: true
+  Golden Globes Awards:
+    type: number
+    sync: true
+    data:
+      starting: current_year-5
+      ending: current_year
+    title_format: Golden Globe <<key_name>>
+    template:
+      - use_year_collections
+      - imdb
+      - shared
+      - arr
+      - custom
+    template_variables:
+      imdb_list:
+        default: https://www.imdb.com/search/title/?release_date=<<key-1>>-01-01,<<key-1>>-12-31&groups=golden_globe_winner&sort=<<imdb_sort>>
+      imdb_sort:
+        default: moviemeter,asc
+      image:
+        default: award/golden/winner/<<key>>
+      translation_key:
+        default: golden_year
+      dynamic:
+        default: true

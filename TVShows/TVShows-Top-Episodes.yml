@@ -1,0 +1,247 @@
+#######################################################
+#                 Top Episodes                        #
+#                TV Collections                       #
+#######################################################
+templates:
+  episodes:
+    optional:
+      - show
+      - poster
+    tvdb_show: <<show>>
+    url_poster: <<poster>>
+    sync_mode: sync
+    schedule: yearly (02/01)
+    builder_level: episode
+    sort_title: "!018_<<collection_name>>"
+    collection_order: custom
+    summary: "A collection of the highest rated <<collection_name>> episodes."
+collections:
+   Top Alfred Hitchcock Present's Episodes:
+     template: {name: episodes}
+     plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 100
+       all:
+         title.ends: "alfred hitchcock presents"
+         year: 1955
+   Top American Greed Episodes:
+     template: {name: episodes}
+     plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 50
+       all:
+         title.ends: "american greed"
+   Top American Dad! Episodes:
+     template: {name: episodes}
+     plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 100
+       all:
+         title.ends: "american dad!"
+   Top Ancient Aliens Episodes:
+     template: {name: episodes}
+     plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 100
+       all:
+         title.ends: "ancient aliens"
+         year: 2009
+   Top Comedy Central Presents Episodes:
+     template: {name: episodes}
+     plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 100
+       all:
+         title.ends: "comedy central presents"
+   Top Doctor Who Episodes:
+     template: {name: episodes}
+     plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 100
+       all:
+         title.ends: "doctor who"
+         year: 1963
+   Top Family Guy Episodes:
+     template: {name: episodes}
+     plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 100
+       all:
+         title.ends: "family guy"
+   Top Forensic Files Episodes:
+     template: {name: episodes}
+     plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 100
+       all:
+         title.ends: "forensic files"
+   Top Frasier Episodes:
+     template: {name: episodes}
+     plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 100
+       all:
+         title.ends: "frasier"
+   Top Good Eats Episodes:
+     template: {name: episodes}
+     plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 100
+       all:
+         title.ends: "good eats"
+   Top How It's Made Episodes:
+     template: {name: episodes}
+     plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 100
+       all:
+         title.ends: "how it's made"
+   Top I Love Lucy Episodes:
+     template: {name: episodes}
+     plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 50
+       all:
+         title.ends: "i love lucy"
+   Top Law & Order Episodes:
+     template: {name: episodes}
+     plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 100
+       all:
+         title.ends: "law & order"
+   Top Mayday Episodes:
+     template: {name: episodes}
+     plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 100
+       all:
+         title.ends: "mayday"
+   Top Midsomer Murders Episodes:
+     template: {name: episodes}
+     plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 50
+       all:
+         title.ends: "midsomer murders"
+   Top Modern Marvels Episodes:
+     template: {name: episodes}
+     plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 100
+       all:
+         title.ends: "modern marvels"
+   Top Mystery Science Theater 3000 Episodes:
+     template: {name: episodes}
+     plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 50
+       all:
+         title.ends: "mystery science theater 3000"
+   Top MythBusters Episodes:
+     template: {name: episodes}
+     plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 100
+       all:
+         title.ends: "mythbusters"
+   Top Seinfeld Episodes:
+     template: {name: episodes}
+     plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 50
+       all:
+         title.ends: "seinfeld"
+   Top South Park Episodes:
+     template: {name: episodes}
+     plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 100
+       all:
+         title.ends: "south park"
+   Top Tales from the Crypt Episodes:
+     template: {name: episodes}
+     plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 25
+       all:
+         title.ends: "from the crypt"
+   Top The Fresh Prince of Bel-Air Episodes:
+     template: {name: episodes}
+     plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 100
+       all:
+         title.ends: "the fresh prince of bel-air"
+   Top The Joy of Painting Episodes:
+     template: {name: episodes}
+     plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 100
+       all:
+         title.ends: "the joy of painting"
+   Top The Office Episodes:
+     template: {name: episodes}
+     plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 100
+       all:
+         title.ends: "the office"
+         year: 2005
+   Top The Simpsons Episodes:
+     template: {name: episodes}
+     plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 100
+       all:
+         title.ends: "the simpsons"
+   Top Twilight Zone Episodes:
+     template: {name: episodes}
+     plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 100
+       all:
+         title.ends: "twilight zone"
+         year: 1959
+   Top Unsolved Mysteries Episodes:
+     template: {name: episodes}
+     plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 100
+       all:
+         title.ends: "unsolved mysteries"
+   Top The X-Files Episodes:
+     template: {name: episodes}
+     plex_search:
+       type: episodes
+       sort_by: audience_rating.desc
+       limit: 100
+       all:
+         title.ends: "the x-files"
