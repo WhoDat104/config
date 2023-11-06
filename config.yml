@@ -1,25 +1,16 @@
-libraries:
-  Movies: 
+libraries:                       # This is called out once within the config.yml file
+  Movies:                        # These are names of libraries in your Plex
     metadata_path:
     - folder: config/Movies
-    - git: PMM/year
-      template_variables:
-        use_separator: false 
-        limit: 100
-        data:
-          starting: current_year-4
-          ending: current_year
   TV Shows:
     metadata_path:
     - folder: config/TVShows
-    - git: PMM/year
-      template_variables:
-        use_separator: false
-        data:
-          starting: current_year-4
-          ending: current_year
+#   Music:
+#     metadata_path:
+#     - file: config/Music.yml     # This is a local file THAT YOU MIGHT CREATE
 playlist_files:
-- git: PMM/playlist
+  - folder: config/Playlists                  # This is a file within PMM's defaults folder
+  #see the wiki for how to use local files, folders, URLs, or files from git
 settings:
   cache: true
   cache_expiration: 60
@@ -27,7 +18,7 @@ settings:
   asset_folders: false
   asset_depth: 0
   create_asset_folders: false
-  prioritize_assets: true
+  prioritize_assets: false
   dimensional_asset_rename: false
   download_url_assets: true
   show_missing_season_assets: false
@@ -39,9 +30,10 @@ settings:
   delete_below_minimum: true
   delete_not_scheduled: false
   run_again_delay: 2
-  missing_only_released: false
+  missing_only_released: true
   only_filter_missing: false
   show_unmanaged: true
+  show_unconfigured: true
   show_filtered: false
   show_options: false
   show_missing: false
@@ -49,76 +41,83 @@ settings:
   save_report: false
   tvdb_language: eng
   ignore_ids:
+  - tmdb_show: 278
+  - tmdb_show: 60694
   ignore_imdb_ids:
   item_refresh_delay: 0
   playlist_sync_to_user: all
+  playlist_exclude_users:
   playlist_report: false
   verify_ssl: true
   custom_repo:
-  check_nightly: false
-webhooks:                                       # Can be individually specified per library as well
+  check_nightly: true
+webhooks:                        # Can be individually specified per library as well
   error: notifiarr
   version:
   run_start: notifiarr
   run_end: notifiarr
   changes: notifiarr
-plex:                                           # Can be individually specified per library as well; REQUIRED for the script to run
+  delete:
+plex:                            # Can be individually specified per library as well; REQUIRED for the script to run
   url: http://localhost:32400
-  token: correcttokenhere
+  token: [redacted]
   timeout: 1200
   clean_bundles: false
   empty_trash: false
   optimize: false
-tmdb:                                           # REQUIRED for the script to run
-  apikey: correctapihere
+  db_cache:
+tmdb:                            # REQUIRED for the script to run
+  apikey: [redacted]
   language: en
   cache_expiration: 60
   region:
-tautulli:                                       # Can be individually specified per library as well
+tautulli:                        # Can be individually specified per library as well
   url: http://localhost:8181
-  apikey: correctapihere
+  apikey: [redacted]
 omdb:
-  apikey: correctapihere
+  apikey: [redacted]
   cache_expiration: 60
 mdblist:
-  apikey: correctapirehere
+  apikey: [redacted]
   cache_expiration: 60
 notifiarr:
-  apikey: correctapihere
-radarr:                                         # Can be individually specified per library as well
+  apikey: [redacted]
+radarr:                          # Can be individually specified per library as well
   url: http://localhost:7878
-  token: correctokenhere
+  token: [redacted]
   add_missing: true
   add_existing: false
-  root_folder_path: correctpathhere
+  root_folder_path: path
   monitor: true
   availability: announced
   quality_profile: HD-1080p
   tag:
-  search: true
+  search: false
   radarr_path:
   plex_path:
   upgrade_existing: false
-sonarr:                                         # Can be individually specified per library as well
+  ignore_cache: false
+sonarr:                          # Can be individually specified per library as well
   url: http://localhost:8989
-  token: correcttokenhere
+  token: [redacted]
   add_missing: false
   add_existing: false
-  root_folder_path: correctpathhere
+  root_folder_path: path
   monitor: all
-  quality_profile: any
+  quality_profile: HD-1080p
   language_profile: English
   series_type: standard
   season_folder: true
   tag:
-  search: true
+  search: false
   cutoff_search: false
   sonarr_path:
   plex_path:
   upgrade_existing: false
+  ignore_cache: false
 trakt:
-  client_id: correctidhere
-  client_secret: correctsecrethere
+  client_id: [redacted]
+  client_secret: [redacted]
   pin:
   authorization:
     # everything below is autofilled by the script
